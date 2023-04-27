@@ -18,6 +18,15 @@ public class InformacoesPlayer : ScriptableObject
     public float GetPorcentagemDeVida=>Mathf.Clamp(vidaAtual/vidaMaxima,0f,100f);
     public float GetVidaAtual=>Mathf.Clamp(vidaAtual,0,vidaMaxima);
     public float GetVidaMaxima=>vidaMaxima;
+
+    public void EncherVida()
+    {
+        vidaAtual=vidaMaxima;
+        if(EventosCura!=null)
+        {
+            EventosCura.Invoke();
+        }
+    }
     public void Curar(float quantidadeDeCura)
     {
         vidaAtual=Mathf.Clamp(vidaAtual+quantidadeDeCura,0,vidaMaxima);

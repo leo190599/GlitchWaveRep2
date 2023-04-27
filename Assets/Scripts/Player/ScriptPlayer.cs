@@ -49,7 +49,7 @@ public class ScriptPlayer : MonoBehaviour
     void Start()
     {
         controldadorDeCenaPlayer.TrocarEstadoAtual(ControladorDeCena.TipoEstadoCena.jogando);
-        informacoesPlayer.Curar(informacoesPlayer.GetVidaMaxima);
+        informacoesPlayer.EncherVida();
         raycastsPulo=new List<RaycastHit2D>();
         rb=GetComponent<Rigidbody2D>();
         col=GetComponent<CapsuleCollider2D>();
