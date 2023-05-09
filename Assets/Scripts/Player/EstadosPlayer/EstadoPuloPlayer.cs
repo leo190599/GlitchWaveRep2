@@ -7,7 +7,7 @@ public class EstadoPuloPlayer : EstadoNoArBasePlayer
     public override void AtualizarEstadoFixado()
     {
         base.AtualizarEstadoFixado();
-        if(Mathf.Abs(player.GetRigidbody2D.velocity.x)<player.GetVelocidadeDeMovimento)
+        if(Mathf.Abs(player.GetRigidbody2D.velocity.x+Mathf.Lerp(Input.GetAxis(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)*player.GetVelocidadeDeMovimento,0,player.GetPerdaDeMovimentoNoAr))<player.GetVelocidadeDeMovimento)
         {
             player.GetRigidbody2D.AddForce(new Vector2(
             Mathf.Lerp(Input.GetAxis(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)*player.GetVelocidadeDeMovimento,0,player.GetPerdaDeMovimentoNoAr),0));
@@ -18,7 +18,7 @@ public class EstadoPuloPlayer : EstadoNoArBasePlayer
         {
             foreach(RaycastHit2D r in player.GetRaycastsPulo)
             {
-                if(r.collider.tag!="Player")
+                if(r.collider.tag!="Player" && r.collider.tag!="ColiderFantasma")
                 {
                     if(Input.GetAxisRaw(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)!=0)
                     {

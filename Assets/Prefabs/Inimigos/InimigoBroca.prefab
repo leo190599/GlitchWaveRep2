@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 5830530537353753}
   m_Layer: 0
   m_Name: ColliderRecebimentoDeDano
-  m_TagString: Untagged
+  m_TagString: ColiderFantasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 5830530904704519}
   m_Layer: 0
   m_Name: ColliderCausadorDeDano
-  m_TagString: Untagged
+  m_TagString: ColiderFantasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5168,7 +5168,7 @@ SkinnedMeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5168671682338515768}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
