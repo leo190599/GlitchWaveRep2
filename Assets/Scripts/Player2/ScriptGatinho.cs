@@ -54,8 +54,8 @@ public class ScriptGatinho : MonoBehaviour
             {
                 if(Input.GetMouseButtonDown(0))
                 {  
-                    malha.SetActive(true);
                     transform.position=new Vector3(cam.ScreenToWorldPoint(Input.mousePosition).x,cam.ScreenToWorldPoint(Input.mousePosition).y,0);
+                    malha.SetActive(true);
                     estadoGatinho=EstadoGatinho.mirando;
                 }
             }
