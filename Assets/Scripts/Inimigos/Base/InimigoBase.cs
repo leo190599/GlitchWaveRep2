@@ -11,7 +11,7 @@ public class InimigoBase : MonoBehaviour
     [SerializeField]
     protected float dano=10;
     // Start is called before the first frame update
-    public void LevarDano(float quantidadeDeDano)
+    public virtual void LevarDano(float quantidadeDeDano)
     {
         vida-=quantidadeDeDano;
         if(vida<0)
@@ -27,7 +27,7 @@ public class InimigoBase : MonoBehaviour
 
     public virtual void Morrer()
     {
-        
+        Destroy(gameObject);
     }
 
     public float GetVida=>vida;

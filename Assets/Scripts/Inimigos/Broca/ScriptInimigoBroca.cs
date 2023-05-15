@@ -23,6 +23,11 @@ public class ScriptInimigoBroca : InimigoBase
         base.CausarDano(player);
         player.ReceberDano(dano);
     }
+
+    public override void LevarDano(float quantidadeDeDano)
+    {
+        base.LevarDano(quantidadeDeDano);
+    }
     // Update is called once per frame
     void FixedUpdate()
     {

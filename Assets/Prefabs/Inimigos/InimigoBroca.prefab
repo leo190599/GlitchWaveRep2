@@ -53,7 +53,7 @@ MonoBehaviour:
   vida: 100
   vidaMaxima: 100
   dano: 10
-  vel: 7
+  vel: 0
 --- !u!50 &5830530258597968
 Rigidbody2D:
   serializedVersion: 4

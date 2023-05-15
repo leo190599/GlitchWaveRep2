@@ -97,7 +97,7 @@ public class ScriptPlayer : MonoBehaviour
         {
             informacoesPlayer.Curar(10);
         }
-        Debug.Log(estadoPlayerAtual);
+        //Debug.Log(estadoPlayerAtual);
     }
 
     void FixedUpdate()
