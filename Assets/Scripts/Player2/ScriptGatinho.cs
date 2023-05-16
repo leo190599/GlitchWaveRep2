@@ -21,6 +21,10 @@ public class ScriptGatinho : MonoBehaviour
     
     [SerializeField]
     private GameObject malha;
+    [SerializeField]
+    private GameObject mira;
+    [SerializeField]
+    private TrailRenderer tr;
 
     [SerializeField]
     private ControladorDeCena controladorDeCena;
@@ -43,6 +47,7 @@ public class ScriptGatinho : MonoBehaviour
         direcaoDeAtaque=new Vector2();
         cam=Camera.main;
         malha.SetActive(false);
+        mira.SetActive(false);
     }
 
     // Update is called once per frame
@@ -56,6 +61,7 @@ public class ScriptGatinho : MonoBehaviour
                 {  
                     transform.position=new Vector3(cam.ScreenToWorldPoint(Input.mousePosition).x,cam.ScreenToWorldPoint(Input.mousePosition).y,0);
                     malha.SetActive(true);
+                    mira.SetActive(true);
                     estadoGatinho=EstadoGatinho.mirando;
                 }
             }
@@ -68,6 +74,7 @@ public class ScriptGatinho : MonoBehaviour
             
                 if(Input.GetMouseButtonUp(0))
                 {
+                    mira.SetActive(false);
                     estadoGatinho=EstadoGatinho.atacando;
                 }
             }
@@ -114,7 +121,9 @@ public class ScriptGatinho : MonoBehaviour
             EsperandoADesativacao=true;
             yield return new WaitForSeconds(temposParaDesativamento);
             estadoGatinho=EstadoGatinho.desativado;
-            EsperandoADesativacao=false;ultimoInimigoAtingido=null;
+            EsperandoADesativacao=false;
+            ultimoInimigoAtingido=null;
+            tr.Clear();
             malha.SetActive(false);
         }
 }
