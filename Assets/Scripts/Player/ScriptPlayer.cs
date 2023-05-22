@@ -15,6 +15,8 @@ public class ScriptPlayer : MonoBehaviour
     [SerializeField]
     [Range(0f,1f)]
     private float perdaDeMovimentoNoAr=0f;
+    [SerializeField]
+    private float vidaCuradaPorColisaoParticula=1;
 
     [Header("Parametros Debug")]
     [SerializeField]
@@ -143,6 +145,7 @@ public class ScriptPlayer : MonoBehaviour
     {
         informacoesPlayer.EventosMorte-=Morrer;
     }
+
     public void ReceberDano(float quantidadeDeDano)
     {
         informacoesPlayer.ReceberDano(quantidadeDeDano);
@@ -154,6 +157,8 @@ public class ScriptPlayer : MonoBehaviour
 
     public void Morrer()
     {
+        rb.sharedMaterial=materialFisicoParado;
+        rb.velocity=new Vector2(0,rb.velocity.y);
         controldadorDeCenaPlayer.TrocarEstadoAtual(ControladorDeCena.TipoEstadoCena.morreu);
     }
 
@@ -187,4 +192,5 @@ public class ScriptPlayer : MonoBehaviour
     public float GetPerdaDeMovimentoNoAr=>perdaDeMovimentoNoAr;
     public List<RaycastHit2D> GetRaycastsPulo=>raycastsPulo;
     public float GetDistanciaChecagemPulo=>distanciaChecagemPulo;
+    public float GetVidaCuradaPorColisaoParticula=>vidaCuradaPorColisaoParticula;
 }
