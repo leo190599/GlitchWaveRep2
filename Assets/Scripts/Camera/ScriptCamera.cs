@@ -22,9 +22,10 @@ public class ScriptCamera : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         
+        /*
         novaTransformada.x=Mathf.Lerp(transform.position.x,player.transform.position.x+offSet.x,velocidadeDeSeguimento.x);
         novaTransformada.y=Mathf.Lerp(transform.position.y,player.transform.position.y+offSet.y, velocidadeDeSeguimento.y);
         novaTransformada.z=Mathf.Lerp(transform.position.z,player.transform.position.z+offSet.z,velocidadeDeSeguimento.z);
@@ -40,7 +41,8 @@ public class ScriptCamera : MonoBehaviour
         novaTransformada.z=Mathf.Clamp(novaTransformada.z,
         player.transform.position.z+offSet.z-maximaDistanciaDoLocalFinal.z,
         player.transform.position.z+offSet.z+maximaDistanciaDoLocalFinal.z);
-        
+        */
+        novaTransformada=player.transform.position+offSet;
         transform.SetPositionAndRotation(novaTransformada,transform.rotation);
         
 

@@ -115,7 +115,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _IntensidadeEmissao: 1.04
-    - _IntensidadeGlitch: 1
+    - _IntensidadeGlitch: 4.29
     - _LacunaridadeGlitch: 0.44
     - _Metalico: 0
     - _Metallic: 0
