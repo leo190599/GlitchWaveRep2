@@ -23,6 +23,17 @@ public class EstadoIdlePlayer : EstadoAtivoBasePlayer
         if(Input.GetAxisRaw(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)!=0)
         {
             player.TrocaEstadoPlayer(new EstadoAndandoPlayer());
+            return;
+        }
+        if(Input.GetKeyDown(player.GetMapeadorDeBotoes.GetBotaoAtaque))
+        {
+            player.TrocaEstadoPlayer(new EstadoAtaquePlayer());
+            return;
+        }
+        if(Input.GetKeyDown(player.GetMapeadorDeBotoes.GetBotaoSubItem))
+        {
+            player.TrocaEstadoPlayer(new EstadoUsandoSubItemPlayer());
+            return;
         }
     }
 }

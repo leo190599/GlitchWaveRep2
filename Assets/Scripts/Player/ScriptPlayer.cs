@@ -17,6 +17,10 @@ public class ScriptPlayer : MonoBehaviour
     private float perdaDeMovimentoNoAr=0f;
     [SerializeField]
     private float vidaCuradaPorColisaoParticula=1;
+    [SerializeField]
+    private Vector2 offSetCentroAtaquePlayer;
+    [SerializeField]
+    private Vector2 dimensoesAtaque;
 
     [Header("Parametros Debug")]
     [SerializeField]
@@ -135,6 +139,14 @@ public class ScriptPlayer : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.DrawLine(col.bounds.center,new Vector3(col.bounds.center.x,col.bounds.min.y-distanciaChecagemPulo,col.bounds.min.z));
+        if(olhandoParaDireita)
+        {
+            Gizmos.DrawWireCube(new Vector3(transform.position.x+offSetCentroAtaquePlayer.x,transform.position.y+offSetCentroAtaquePlayer.y,transform.position.z),dimensoesAtaque);
+        }
+        else
+        {
+            Gizmos.DrawWireCube(new Vector3(transform.position.x-offSetCentroAtaquePlayer.x,transform.position.y+offSetCentroAtaquePlayer.y,transform.position.z),dimensoesAtaque);
+        }
     }
 
     void OnEnable()
@@ -144,6 +156,11 @@ public class ScriptPlayer : MonoBehaviour
     void OnDisable()
     {
         informacoesPlayer.EventosMorte-=Morrer;
+    }
+
+    public void Atacar()
+    {
+        Debug.Log("a");
     }
 
     public void ReceberDano(float quantidadeDeDano)

@@ -29,5 +29,15 @@ public class EstadoAndandoPlayer : EstadoAtivoBasePlayer
             player.TrocaEstadoPlayer(new EstadoPuloPlayer());
             return;
         }
+        if(Input.GetKeyDown(player.GetMapeadorDeBotoes.GetBotaoAtaque))
+        {
+            player.TrocaEstadoPlayer(new EstadoAtaquePlayer());
+            return;
+        }
+        if(Input.GetKeyDown(player.GetMapeadorDeBotoes.GetBotaoSubItem))
+        {
+            player.TrocaEstadoPlayer(new EstadoUsandoSubItemPlayer());
+            return;
+        }
     }
 }
