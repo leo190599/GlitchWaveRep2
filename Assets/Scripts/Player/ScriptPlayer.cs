@@ -189,12 +189,12 @@ public class ScriptPlayer : MonoBehaviour
     {
         if(olhandoParaDireita)
         {
-            rotacaoAlvo.y=90;
+            rotacaoAlvo.y=270;
             this.olhandoParaDireita=true;
         }
         else
         {
-            rotacaoAlvo.y=270;
+            rotacaoAlvo.y=90;
             this.olhandoParaDireita=false;
         }
     }
@@ -210,4 +210,5 @@ public class ScriptPlayer : MonoBehaviour
     public List<RaycastHit2D> GetRaycastsPulo=>raycastsPulo;
     public float GetDistanciaChecagemPulo=>distanciaChecagemPulo;
     public float GetVidaCuradaPorColisaoParticula=>vidaCuradaPorColisaoParticula;
+    public InformacoesPlayer GetInformacoesPlayer=>informacoesPlayer;
 }

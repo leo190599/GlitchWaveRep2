@@ -10,6 +10,8 @@ public class InformacoesPlayer : ScriptableObject
     private float vidaMaxima=100;
     [SerializeField]
     private float vidaAtual=100;
+    [SerializeField]
+    private SubItemObjetoScriptavel subItemObjetoScriptavel;
 
     public UnityAction EventosLevarDano;
     public UnityAction EventosCura;
@@ -47,5 +49,18 @@ public class InformacoesPlayer : ScriptableObject
 
             EventosMorte.Invoke();
         }
+    }
+    public void SetSubItemObjetoScriptavel(SubItemObjetoScriptavel subItemObjetoScriptavel)
+    {
+        this.subItemObjetoScriptavel=subItemObjetoScriptavel;
+    }
+
+    public GameObject GetPrefabSubItem()
+    {
+        if(subItemObjetoScriptavel!=null)
+        {
+            return subItemObjetoScriptavel.GetPrefabSubItem;
+        }
+        return null;
     }
 }
