@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37a715c610fd8a64595e5df496fe8ff4, type: 3}
   m_Name: DubstepGun
   m_EditorClassIdentifier: 
-  prefabSubItem: {fileID: 0}
+  prefabSubItem: {fileID: 680510596424818805, guid: 932ae076185756d42a825eab5101bc9b, type: 3}
+  custoDeVida: 10

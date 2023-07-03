@@ -55,6 +55,8 @@ public class InformacoesPlayer : ScriptableObject
         this.subItemObjetoScriptavel=subItemObjetoScriptavel;
     }
 
+    public SubItemObjetoScriptavel GetSubItemObjetoScriptavel=>subItemObjetoScriptavel;
+
     public GameObject GetPrefabSubItem()
     {
         if(subItemObjetoScriptavel!=null)

@@ -29,7 +29,11 @@ public class ScriptPlayer : MonoBehaviour
     private float distanciaChecagemPulo=1;
     [SerializeField]
     private GameObject meshPersonagem;
+
+    [SerializeField]
+    private Transform transformPosicaoInstanciaSubItem;
     private List<RaycastHit2D>raycastsPulo;
+    
 
     [Header("Scriptable objects")]
     [SerializeField]
@@ -158,6 +162,11 @@ public class ScriptPlayer : MonoBehaviour
         informacoesPlayer.EventosMorte-=Morrer;
     }
 
+    public void instanciarObjeto(GameObject objeto,Vector3 posicao, Quaternion rotacao)
+    {
+        Instantiate(objeto,posicao,rotacao);
+    }
+
     public void Atacar()
     {
         Debug.Log("a");
@@ -211,4 +220,5 @@ public class ScriptPlayer : MonoBehaviour
     public float GetDistanciaChecagemPulo=>distanciaChecagemPulo;
     public float GetVidaCuradaPorColisaoParticula=>vidaCuradaPorColisaoParticula;
     public InformacoesPlayer GetInformacoesPlayer=>informacoesPlayer;
+    public Transform GetTransformPosicaoInstanciaSubItem=>transformPosicaoInstanciaSubItem;
 }

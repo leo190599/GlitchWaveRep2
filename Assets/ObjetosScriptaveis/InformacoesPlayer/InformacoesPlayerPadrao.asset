@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: InformacoesPlayerPadrao
   m_EditorClassIdentifier: 
   vidaMaxima: 100
-  vidaAtual: 100
+  vidaAtual: 80
+  subItemObjetoScriptavel: {fileID: 0}
