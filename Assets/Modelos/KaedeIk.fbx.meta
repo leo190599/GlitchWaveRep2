@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a9da4ed102867924f8ae7bc6c03788cb
+guid: 7e57561d47bf53141a6063b4f175e45c
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MaterialKaede
-    second: {fileID: 2100000, guid: 9439f1107e12b564fbef9ffd9141f6fa, type: 2}
+    second: {fileID: 2100000, guid: deb72c1bb0c3319488fda151edb5814a, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: TexturaKaede
-    second: {fileID: 2800000, guid: 858f7bc1bd8349947acf078960f7b7d8, type: 3}
+      name: TexturaUniversal
+    second: {fileID: 2800000, guid: 274b5c2c144588445a236839be07dd43, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -34,7 +34,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -98,10 +98,10 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.024999999
+    globalScale: 2.5
     rootMotionBoneName: Base
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
