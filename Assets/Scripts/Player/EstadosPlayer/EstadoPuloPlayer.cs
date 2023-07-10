@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EstadoPuloPlayer : EstadoNoArBasePlayer
 {
+    public override void IniciarEstadoPlayer(ScriptPlayer player)
+    {
+        base.IniciarEstadoPlayer(player);
+        player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.pulando);
+    }
     public override void AtualizarEstadoFixado()
     {
         base.AtualizarEstadoFixado();

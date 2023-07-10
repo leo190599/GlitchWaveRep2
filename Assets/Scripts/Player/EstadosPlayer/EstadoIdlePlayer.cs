@@ -10,6 +10,7 @@ public class EstadoIdlePlayer : EstadoAtivoBasePlayer
         base.IniciarEstadoPlayer(player);
         player.GetRigidbody2D.velocity=new Vector2(0,player.GetRigidbody2D.velocity.y);
         player.GetRigidbody2D.sharedMaterial=player.GetMaterialFisicoParado;
+        player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.idle);
     }
     public override void AtualizarEstado()
     {

@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 191054954}
   - component: {fileID: 191054953}
   - component: {fileID: 191054952}
-  - component: {fileID: 191054951}
   m_Layer: 0
   m_Name: RaioDubstepGun
   m_TagString: Untagged
@@ -142,20 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &191054951
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191054950}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &191054952
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2598,6 +2583,7 @@ MonoBehaviour:
   vidaCuradaPorColisaoParticula: 3
   offSetCentroAtaquePlayer: {x: 3.14, y: 0.57}
   dimensoesAtaque: {x: 2.72, y: 4.6}
+  anim: {fileID: 6603702313571163832}
   informacoesPlayer: {fileID: 11400000, guid: cd7b505426ff6784098cfa444cbaf08b, type: 2}
   distanciaChecagemPulo: 0.72
   meshPersonagem: {fileID: 6603702313571163831}
@@ -2717,6 +2703,10 @@ PrefabInstance:
     - target: {fileID: 693325616518822417, guid: eec812d88837c14488da5d41a8898157, type: 3}
       propertyPath: m_Name
       value: ObjetoColetaSubItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 693325616518822417, guid: eec812d88837c14488da5d41a8898157, type: 3}
+      propertyPath: m_TagString
+      value: ColiderFantasma
       objectReference: {fileID: 0}
     - target: {fileID: 693325616518822421, guid: eec812d88837c14488da5d41a8898157, type: 3}
       propertyPath: m_RootOrder

@@ -24,6 +24,8 @@ public class ScriptPlayer : MonoBehaviour
 
     [Header("Parametros Debug")]
     [SerializeField]
+    private Animator anim;
+    [SerializeField]
     private InformacoesPlayer informacoesPlayer;
     [SerializeField]
     private float distanciaChecagemPulo=1;
@@ -56,6 +58,19 @@ public class ScriptPlayer : MonoBehaviour
     
     private Vector3 rotacaoAlvo;
     // Start is called before the first frame update
+
+    public enum EstadosAnimacao
+    {
+        idle=0,
+        correndo=1,
+        pulando=2,
+        usandoSubItem=3,
+        atacando=4,
+        abaixada=5,
+        abaixadaAtacando=6,
+        pulandoAtacando=7,
+        levandoDano=8
+    }
     void Start()
     {
         controldadorDeCenaPlayer.TrocarEstadoAtual(ControladorDeCena.TipoEstadoCena.jogando);
@@ -207,6 +222,10 @@ public class ScriptPlayer : MonoBehaviour
             this.olhandoParaDireita=false;
         }
     }
+    public void TrocarAnimPlayer(EstadosAnimacao novoEstado)
+    {
+        anim.SetInteger("EstadoAnim",(int)novoEstado);
+    }
     public PhysicsMaterial2D GetMaterialFisicoParado=> materialFisicoParado;
     public PhysicsMaterial2D GetMaterialFisicoAndando=>materialFisicoAndando;
     public MapeadorDeBotoes GetMapeadorDeBotoes=>mapeadorDeBotoes;
@@ -221,4 +240,5 @@ public class ScriptPlayer : MonoBehaviour
     public float GetVidaCuradaPorColisaoParticula=>vidaCuradaPorColisaoParticula;
     public InformacoesPlayer GetInformacoesPlayer=>informacoesPlayer;
     public Transform GetTransformPosicaoInstanciaSubItem=>transformPosicaoInstanciaSubItem;
+    public Animator GetAnimator=>anim;
 }

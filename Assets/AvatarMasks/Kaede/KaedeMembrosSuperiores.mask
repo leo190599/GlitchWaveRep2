@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: KaedeMembrosSuperiores
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 0
+  - m_Path: Armature/Base
+    m_Weight: 0
+  - m_Path: Armature/Base/Barriga
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/Gravata1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/Gravata1/Gravata2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/Gravata1/Gravata2/Gravata2_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/Gravata1/Gravata2/Gravata2_end/Gravata2_end_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Anelar1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Anelar1/L.Anelar2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Anelar1/L.Anelar2/L.Anelar3
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Anelar1/L.Anelar2/L.Anelar3/L.Anelar3_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.DedoDoMeio1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.DedoDoMeio1/L.DedoDoMeio2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.DedoDoMeio1/L.DedoDoMeio2/L.DedoDoMeio3
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.DedoDoMeio1/L.DedoDoMeio2/L.DedoDoMeio3/L.DedoDoMeio3_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Indicador1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Indicador1/L.Indicador2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Indicador1/L.Indicador2/L.Indicador3
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Indicador1/L.Indicador2/L.Indicador3/L.Indicador3_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Mindinho1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Mindinho1/L.Mindinho2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Mindinho1/L.Mindinho2/L.Mindinho3
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Mindinho1/L.Mindinho2/L.Mindinho3/L.Mindinho3_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Polegar1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Polegar1/L.Polegar2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/L.Braco/L.Antebraco/L.Mao/L.Polegar1/L.Polegar2/L.Polegar2_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/Pescoco
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/Pescoco/cabeca
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/Pescoco/cabeca/cabeca_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Anelar1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Anelar1/R.Anelar2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Anelar1/R.Anelar2/R.Anelar3
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Anelar1/R.Anelar2/R.Anelar3/R.Anelar3_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.DedoDoMeio1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.DedoDoMeio1/R.DedoDoMeio2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.DedoDoMeio1/R.DedoDoMeio2/R.DedoDoMeio3
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.DedoDoMeio1/R.DedoDoMeio2/R.DedoDoMeio3/R.DedoDoMeio3_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Indicador1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Indicador1/R.Indicador2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Indicador1/R.Indicador2/R.Indicador3
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Indicador1/R.Indicador2/R.Indicador3/R.Indicador3_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Mindinho1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Mindinho1/R.Mindinho2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Mindinho1/R.Mindinho2/R.Mindinho3
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Mindinho1/R.Mindinho2/R.Mindinho3/R.Mindinho3_end
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Polegar1
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Polegar1/R.Polegar2
+    m_Weight: 1
+  - m_Path: Armature/Base/Barriga/Coluna/R.Braco/R.Antebraco/R.Mao/R.Polegar1/R.Polegar2/R.Polegar2_end
+    m_Weight: 1
+  - m_Path: Armature/Base/l.Coxa
+    m_Weight: 0
+  - m_Path: Armature/Base/l.Coxa/l.Perna
+    m_Weight: 0
+  - m_Path: Armature/Base/l.Coxa/l.Perna/l.Pe1
+    m_Weight: 0
+  - m_Path: Armature/Base/l.Coxa/l.Perna/l.Pe1/l.Pe2
+    m_Weight: 0
+  - m_Path: Armature/Base/l.Coxa/l.Perna/l.Pe1/l.Pe2/l.Pe2_end
+    m_Weight: 0
+  - m_Path: Armature/Base/L.SaiaFrente
+    m_Weight: 0
+  - m_Path: Armature/Base/L.SaiaFrente/L.SaiaFrente_end
+    m_Weight: 0
+  - m_Path: Armature/Base/L.SaiaLateral
+    m_Weight: 0
+  - m_Path: Armature/Base/L.SaiaLateral/L.SaiaLateral_end
+    m_Weight: 0
+  - m_Path: Armature/Base/L.SaiaTras
+    m_Weight: 0
+  - m_Path: Armature/Base/L.SaiaTras/L.SaiaTras_end
+    m_Weight: 0
+  - m_Path: Armature/Base/Pelvis
+    m_Weight: 0
+  - m_Path: Armature/Base/Pelvis/Pelvis_end
+    m_Weight: 0
+  - m_Path: Armature/Base/Pelvis/Pelvis_end/Pelvis_end_end
+    m_Weight: 0
+  - m_Path: Armature/Base/r.Coxa
+    m_Weight: 0
+  - m_Path: Armature/Base/r.Coxa/r.Perna
+    m_Weight: 0
+  - m_Path: Armature/Base/r.Coxa/r.Perna/r.Pe1
+    m_Weight: 0
+  - m_Path: Armature/Base/r.Coxa/r.Perna/r.Pe1/r.Pe2
+    m_Weight: 0
+  - m_Path: Armature/Base/r.Coxa/r.Perna/r.Pe1/r.Pe2/r.Pe2_end
+    m_Weight: 0
+  - m_Path: Armature/Base/R.SaiaFrente
+    m_Weight: 0
+  - m_Path: Armature/Base/R.SaiaFrente/R.SaiaFrente_end
+    m_Weight: 0
+  - m_Path: Armature/Base/R.SaiaLateral
+    m_Weight: 0
+  - m_Path: Armature/Base/R.SaiaLateral/R.SaiaLateral_end
+    m_Weight: 0
+  - m_Path: Armature/Base/R.SaiaTras
+    m_Weight: 0
+  - m_Path: Armature/Base/R.SaiaTras/R.SaiaTras_end
+    m_Weight: 0
+  - m_Path: Armature/Base/SaiaFrente
+    m_Weight: 0
+  - m_Path: Armature/Base/SaiaFrente/SaiaFrente_end
+    m_Weight: 0
+  - m_Path: Armature/Base/SaiaTras
+    m_Weight: 0
+  - m_Path: Armature/Base/SaiaTras/SaiaTras_end
+    m_Weight: 0
+  - m_Path: Armature/L.Braco._Pole
+    m_Weight: 0
+  - m_Path: Armature/L.Braco._Pole/L.Braco._Pole_end
+    m_Weight: 0
+  - m_Path: Armature/L.Braco_IK
+    m_Weight: 0
+  - m_Path: Armature/L.Braco_IK/L.Braco_IK_end
+    m_Weight: 0
+  - m_Path: Armature/l.Pe2_Ik
+    m_Weight: 0
+  - m_Path: Armature/l.Pe2_Ik/l.Pe2_Ik_end
+    m_Weight: 0
+  - m_Path: Armature/l.Perna_Pole
+    m_Weight: 0
+  - m_Path: Armature/l.Perna_Pole/l.Perna_Pole_end
+    m_Weight: 0
+  - m_Path: Armature/R.Braco_IK
+    m_Weight: 0
+  - m_Path: Armature/R.Braco_IK/R.Braco_IK_end
+    m_Weight: 0
+  - m_Path: Armature/R.Braco_Pole
+    m_Weight: 0
+  - m_Path: Armature/R.Braco_Pole/R.Braco_Pole_end
+    m_Weight: 0
+  - m_Path: Armature/r.Pe2_IK
+    m_Weight: 0
+  - m_Path: Armature/r.Pe2_IK/r.Pe2_IK_end
+    m_Weight: 0
+  - m_Path: Armature/r.Perna Pole
+    m_Weight: 0
+  - m_Path: Armature/r.Perna Pole/r.Perna Pole_end
+    m_Weight: 0
+  - m_Path: Kaede
+    m_Weight: 0
