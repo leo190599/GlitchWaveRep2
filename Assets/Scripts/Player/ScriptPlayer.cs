@@ -31,6 +31,8 @@ public class ScriptPlayer : MonoBehaviour
     private float distanciaChecagemPulo=1;
     [SerializeField]
     private GameObject meshPersonagem;
+    [SerializeField]
+    private ControladorEfeitosEspadaKaede controladorEfeitosEspadaKaede;
 
     [SerializeField]
     private Transform transformPosicaoInstanciaSubItem;
@@ -177,6 +179,15 @@ public class ScriptPlayer : MonoBehaviour
         informacoesPlayer.EventosMorte-=Morrer;
     }
 
+    public void AtivarEfeitosEspada()
+    {
+        controladorEfeitosEspadaKaede.AtivarTrails();
+    }
+    public void DesativarEfeitosEspada()
+    {
+        controladorEfeitosEspadaKaede.DesativarTrails();
+    }
+
     public void instanciarObjeto(GameObject objeto,Vector3 posicao, Quaternion rotacao)
     {
         Instantiate(objeto,posicao,rotacao);
@@ -209,6 +220,11 @@ public class ScriptPlayer : MonoBehaviour
         estadoPlayerAtual=novoEstado;
         estadoPlayerAtual.IniciarEstadoPlayer(this);
     }
+    public IEnumerator TrocaEstadoPlayerCorrotina(EstadoBasePlayer novoEstado,float tempo)
+    {
+        yield return new WaitForSeconds(tempo);
+        TrocaEstadoPlayer(novoEstado);
+    }
     public void RodarPersonagem(bool olhandoParaDireita)
     {
         if(olhandoParaDireita)
@@ -222,10 +238,33 @@ public class ScriptPlayer : MonoBehaviour
             this.olhandoParaDireita=false;
         }
     }
+
+    public void AtivarEventoInicioAnimacao()
+    {
+        estadoPlayerAtual.EventoInicioAnimacao();
+    }
+
+    public void AtivarEventoAnimacao()
+    {
+        estadoPlayerAtual.EventoAnimacao();
+    }
+    public void AtivarEventoFinalAnimacao()
+    {
+        estadoPlayerAtual.EventoFinalAnimacao();
+    }
+
     public void TrocarAnimPlayer(EstadosAnimacao novoEstado)
     {
+        StopCoroutine("TrocarAnimPlayerCorrotina");
         anim.SetInteger("EstadoAnim",(int)novoEstado);
     }
+
+    public IEnumerator TrocarAnimPlayerCorrotina(EstadosAnimacao novoEstado,float tempo)
+    {
+        yield return new WaitForSeconds(tempo);
+        TrocarAnimPlayer(novoEstado);
+    }
+
     public PhysicsMaterial2D GetMaterialFisicoParado=> materialFisicoParado;
     public PhysicsMaterial2D GetMaterialFisicoAndando=>materialFisicoAndando;
     public MapeadorDeBotoes GetMapeadorDeBotoes=>mapeadorDeBotoes;

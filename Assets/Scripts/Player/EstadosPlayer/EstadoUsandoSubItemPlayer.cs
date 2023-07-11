@@ -9,6 +9,12 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
     {
         base.IniciarEstadoPlayer(player);
         player.GetRigidbody2D.velocity=(new Vector2(0,player.GetRigidbody2D.velocity.y));
+        player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.usandoSubItem); 
+    }
+
+    public override void EventoAnimacao()
+    {
+        base.EventoAnimacao();
         subItem=player.GetInformacoesPlayer.GetPrefabSubItem();
         if(subItem!=null)
         {
@@ -28,7 +34,12 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
         else
         {
             Debug.LogWarning("Nao ha sub item para instanciar");
-        }
+        } 
+    }
+
+    public override void EventoFinalAnimacao()
+    {
+        base.EventoFinalAnimacao();
         if(Input.GetAxisRaw(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)!=0)
         {
             player.TrocaEstadoPlayer(new EstadoAndandoPlayer());
