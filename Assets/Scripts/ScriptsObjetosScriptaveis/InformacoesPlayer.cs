@@ -13,6 +13,8 @@ public class InformacoesPlayer : ScriptableObject
     [SerializeField]
     private SubItemObjetoScriptavel subItemObjetoScriptavel;
 
+    [SerializeField]
+    private float danoAtaqueBasico=10;
     public UnityAction EventosLevarDano;
     public UnityAction EventosCura;
     public UnityAction EventosMorte;
@@ -65,4 +67,6 @@ public class InformacoesPlayer : ScriptableObject
         }
         return null;
     }
+
+    public float GetDanoAtaqueBasico=>danoAtaqueBasico;
 }

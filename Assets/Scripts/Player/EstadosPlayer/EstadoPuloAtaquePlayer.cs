@@ -2,20 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EstadoPuloPlayer : EstadoNoArBasePlayer
+public class EstadoPuloAtaquePlayer : EstadoNoArBasePlayer
 {
+    // Start is called before the first frame update
     public override void IniciarEstadoPlayer(ScriptPlayer player)
     {
         base.IniciarEstadoPlayer(player);
-        player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.pulando);
-    }
-    public override void AtualizarEstado()
-    {
-        base.AtualizarEstado();
-        if(Input.GetKeyDown(player.GetMapeadorDeBotoes.GetBotaoAtaque))
-        {
-            player.TrocaEstadoPlayer(new EstadoPuloAtaquePlayer());
-        }
+        player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.pulandoAtacando);
     }
     public override void AtualizarEstadoFixado()
     {
@@ -46,5 +39,17 @@ public class EstadoPuloPlayer : EstadoNoArBasePlayer
             }
         }
         player.GetRaycastsPulo.Clear();
+    }
+
+    public override void EventoInicioAnimacao()
+    {
+        base.EventoInicioAnimacao();
+        player.AtivarEfeitosEspada();
+    }
+    public override void EventoAnimacao()
+    {
+        base.EventoAnimacao();
+            player.Atacar();
+            player.DesativarEfeitosEspada();
     }
 }

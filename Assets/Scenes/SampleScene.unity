@@ -3030,6 +3030,7 @@ MonoBehaviour:
   vidaCuradaPorColisaoParticula: 3
   offSetCentroAtaquePlayer: {x: 3.14, y: 0.57}
   dimensoesAtaque: {x: 2.72, y: 4.6}
+  offSetAtaqueAbaixada: {x: 0, y: -0.7}
   anim: {fileID: 6603702313571163832}
   informacoesPlayer: {fileID: 11400000, guid: cd7b505426ff6784098cfa444cbaf08b, type: 2}
   distanciaChecagemPulo: 0.72

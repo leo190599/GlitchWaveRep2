@@ -15,10 +15,13 @@ public class MapeadorDeBotoes : ScriptableObject
     private KeyCode botaoAtaque=KeyCode.L;
     [SerializeField]
     private KeyCode botaoSubItem=KeyCode.K;
+    [SerializeField]
+    private KeyCode botaoAbaixar=KeyCode.S;
 
     public string GetEixoDeMovimentoHorizontal=>eixoDeMovimentoHorizontal;
     public KeyCode GetBotaoPulo=>botaoPulo;
     public KeyCode GetBotaoPause=>botaoPause;
     public KeyCode GetBotaoAtaque=>botaoAtaque;
     public KeyCode GetBotaoSubItem=>botaoSubItem;
+    public KeyCode GetBotaoAbaixar=>botaoAbaixar;
 }

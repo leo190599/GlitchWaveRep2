@@ -40,5 +40,9 @@ public class EstadoAndandoPlayer : EstadoAtivoBasePlayer
             player.TrocaEstadoPlayer(new EstadoUsandoSubItemPlayer());
             return;
         }
+        if(Input.GetKeyDown(player.GetMapeadorDeBotoes.GetBotaoAbaixar))
+        {
+            player.TrocaEstadoPlayer(new EstadoAbaixadaPlayer());
+        }
     }
 }

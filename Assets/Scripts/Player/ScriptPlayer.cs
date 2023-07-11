@@ -21,6 +21,8 @@ public class ScriptPlayer : MonoBehaviour
     private Vector2 offSetCentroAtaquePlayer;
     [SerializeField]
     private Vector2 dimensoesAtaque;
+    [SerializeField]
+    private Vector2 offSetAtaqueAbaixada;
 
     [Header("Parametros Debug")]
     [SerializeField]
@@ -37,6 +39,7 @@ public class ScriptPlayer : MonoBehaviour
     [SerializeField]
     private Transform transformPosicaoInstanciaSubItem;
     private List<RaycastHit2D>raycastsPulo;
+    private Collider2D[] colisoresAtaque;
     
 
     [Header("Scriptable objects")]
@@ -168,6 +171,20 @@ public class ScriptPlayer : MonoBehaviour
         {
             Gizmos.DrawWireCube(new Vector3(transform.position.x-offSetCentroAtaquePlayer.x,transform.position.y+offSetCentroAtaquePlayer.y,transform.position.z),dimensoesAtaque);
         }
+
+        Gizmos.color=Color.green;
+
+        if(olhandoParaDireita)
+        {
+            Gizmos.DrawWireCube(new Vector3(transform.position.x+offSetCentroAtaquePlayer.x+offSetAtaqueAbaixada.x,transform.position.y
+            +offSetCentroAtaquePlayer.y+offSetAtaqueAbaixada.y,transform.position.z),dimensoesAtaque);
+        }
+        else
+        {
+            Gizmos.DrawWireCube(new Vector3(transform.position.x-offSetCentroAtaquePlayer.x-offSetAtaqueAbaixada.x,transform.position.y
+            +offSetCentroAtaquePlayer.y+offSetAtaqueAbaixada.y,transform.position.z),dimensoesAtaque);
+        }
+        Gizmos.color=Color.white;
     }
 
     void OnEnable()
@@ -195,9 +212,49 @@ public class ScriptPlayer : MonoBehaviour
 
     public void Atacar()
     {
-        Debug.Log("a");
+        MensageiroDeEntradaDeTriggerDanoPlayerInimigo mensageiroDeEntradaDeTriggerDanoPlayerInimigo;
+        //Debug.Log("a");
+        if(olhandoParaDireita)
+        {
+            colisoresAtaque=Physics2D.OverlapBoxAll(new Vector2(transform.position.x,transform.position.y)+offSetCentroAtaquePlayer,dimensoesAtaque,0);
+        }
+        else
+        {
+            colisoresAtaque=Physics2D.OverlapBoxAll(new Vector2(transform.position.x,transform.position.y)-offSetCentroAtaquePlayer,dimensoesAtaque,0);
+        }
+        foreach(Collider2D c in colisoresAtaque)
+        {
+            mensageiroDeEntradaDeTriggerDanoPlayerInimigo=c.gameObject.GetComponent<MensageiroDeEntradaDeTriggerDanoPlayerInimigo>();
+            if(mensageiroDeEntradaDeTriggerDanoPlayerInimigo!=null)
+            {
+                mensageiroDeEntradaDeTriggerDanoPlayerInimigo.LevarDano(informacoesPlayer.GetDanoAtaqueBasico);
+            }
+        }
     }
 
+    public void AtacarAbaixada()
+    {
+        MensageiroDeEntradaDeTriggerDanoPlayerInimigo mensageiroDeEntradaDeTriggerDanoPlayerInimigo;
+        //Debug.Log("a");
+        if(olhandoParaDireita)
+        {
+            colisoresAtaque=Physics2D.OverlapBoxAll(new Vector2(transform.position.x+offSetAtaqueAbaixada.x,transform.position.y
+            +offSetAtaqueAbaixada.y)+offSetCentroAtaquePlayer,dimensoesAtaque,0);
+        }
+        else
+        {
+            colisoresAtaque=Physics2D.OverlapBoxAll(new Vector2(transform.position.x-offSetAtaqueAbaixada.x,transform.position.y
+            +offSetAtaqueAbaixada.y)-offSetCentroAtaquePlayer,dimensoesAtaque,0);
+        }
+        foreach(Collider2D c in colisoresAtaque)
+        {
+            mensageiroDeEntradaDeTriggerDanoPlayerInimigo=c.gameObject.GetComponent<MensageiroDeEntradaDeTriggerDanoPlayerInimigo>();
+            if(mensageiroDeEntradaDeTriggerDanoPlayerInimigo!=null)
+            {
+                mensageiroDeEntradaDeTriggerDanoPlayerInimigo.LevarDano(informacoesPlayer.GetDanoAtaqueBasico);
+            }
+        }
+    }
     public void ReceberDano(float quantidadeDeDano)
     {
         informacoesPlayer.ReceberDano(quantidadeDeDano);
