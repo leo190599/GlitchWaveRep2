@@ -9,7 +9,7 @@ public class MensageiroDeEntradaDeTriggerDanoInimigoPlayer : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D c)
     {
-        ScriptPlayer sP=c.GetComponent<ScriptPlayer>();
+        ScriptPlayer sP=c.GetComponentInParent<ScriptPlayer>();
         if(sP!=null)
         {
             inimigo.CausarDano(sP);

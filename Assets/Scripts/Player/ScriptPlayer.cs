@@ -23,6 +23,8 @@ public class ScriptPlayer : MonoBehaviour
     private Vector2 dimensoesAtaque;
     [SerializeField]
     private Vector2 offSetAtaqueAbaixada;
+    [SerializeField]
+    private Vector2 forcaAplicadaAoEntrarNoEstadoDeTomarDano;
 
     [Header("Parametros Debug")]
     [SerializeField]
@@ -38,6 +40,10 @@ public class ScriptPlayer : MonoBehaviour
 
     [SerializeField]
     private Transform transformPosicaoInstanciaSubItem;
+    [SerializeField]
+    private GameObject colisorRecebimentoDeDano;
+    [SerializeField]
+    private GameObject colisorRecebimentoDeDanoAbaixada;
     private List<RaycastHit2D>raycastsPulo;
     private Collider2D[] colisoresAtaque;
     
@@ -83,7 +89,7 @@ public class ScriptPlayer : MonoBehaviour
         raycastsPulo=new List<RaycastHit2D>();
         rb=GetComponent<Rigidbody2D>();
         col=GetComponent<CapsuleCollider2D>();
-
+        DesativarColisorRecebimentoDeDanoAbaixada();
         //teste
         rotacaoAlvo=meshPersonagem.transform.eulerAngles;
         //teste
@@ -255,9 +261,23 @@ public class ScriptPlayer : MonoBehaviour
             }
         }
     }
+
+    public void AtivarColisorRecebimentoDeDanoAbaixada()
+    {
+        colisorRecebimentoDeDanoAbaixada.SetActive(true);
+        colisorRecebimentoDeDano.SetActive(false);
+    }
+
+    public void DesativarColisorRecebimentoDeDanoAbaixada()
+    {
+        colisorRecebimentoDeDanoAbaixada.SetActive(false);
+        colisorRecebimentoDeDano.SetActive(true);
+    }
+
     public void ReceberDano(float quantidadeDeDano)
     {
         informacoesPlayer.ReceberDano(quantidadeDeDano);
+        TrocaEstadoPlayer(new EstadoTomouDanoPlayer());
     }
     public void Curar(float quantidadeDeCura)
     {
@@ -337,4 +357,5 @@ public class ScriptPlayer : MonoBehaviour
     public InformacoesPlayer GetInformacoesPlayer=>informacoesPlayer;
     public Transform GetTransformPosicaoInstanciaSubItem=>transformPosicaoInstanciaSubItem;
     public Animator GetAnimator=>anim;
+    public Vector2 GetForcaAplicadaAoEntrarNoEstadoDeTomarDano=>forcaAplicadaAoEntrarNoEstadoDeTomarDano;
 }

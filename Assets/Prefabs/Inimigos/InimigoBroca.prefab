@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 5830530904704518}
   - component: {fileID: 5830530904704516}
   - component: {fileID: 5830530904704519}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColliderCausadorDeDano
   m_TagString: ColiderFantasma
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ Transform:
   - {fileID: 3763368539200737682}
   m_Father: {fileID: 8876272681519526172}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -7.0166964e-15, y: 179.99995, z: -180}
 --- !u!1 &924890522930264888
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,6 +264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 548893433206563202}
+  - component: {fileID: 7605867422493501728}
   m_Layer: 0
   m_Name: Inimigo1
   m_TagString: Untagged
@@ -288,6 +289,27 @@ Transform:
   m_Father: {fileID: 5830530258597974}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!95 &7605867422493501728
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924890522930264888}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e1c84967393c7e14b9a81cde5b7b608a, type: 3}
+  m_Controller: {fileID: 9100000, guid: 8ef1c00e5555ef14fa37dd89ae6be464, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2329180988917244165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5263,7 +5285,7 @@ Transform:
   - {fileID: 2276700088526791115}
   m_Father: {fileID: 3953973964447988453}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.6284441e-12, y: -0.000030517576, z: -4.8776362e-14}
 --- !u!1 &7039426019552328534
 GameObject:
   m_ObjectHideFlags: 0
@@ -5295,7 +5317,7 @@ Transform:
   - {fileID: 3953973964447988453}
   m_Father: {fileID: 548893433206563202}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98021, y: 0, z: 0}
 --- !u!1001 &2584303625281887419
 PrefabInstance:
   m_ObjectHideFlags: 0

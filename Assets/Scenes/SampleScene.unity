@@ -321,8 +321,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 0.9397521, b: 0, a: 1}
+      key1: {r: 1, g: 0.82046974, b: 0, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1366,6 +1366,54 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1 &739624785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739624786}
+  - component: {fileID: 739624787}
+  m_Layer: 9
+  m_Name: RecebedorDeDano
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &739624786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739624785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1481203126}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &739624787
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739624785}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0071594003, y: -0.17851385}
+  m_Size: {x: 1.3729692, y: 4.8987336}
+  m_Direction: 0
 --- !u!1 &772633886
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2544,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sP: {fileID: 1481203125}
+--- !u!1 &1110284038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110284039}
+  - component: {fileID: 1110284040}
+  m_Layer: 9
+  m_Name: RecebedorDeDanoAbaixada
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1110284039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110284038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1481203126}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1110284040
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110284038}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0071594003, y: -0.59520715}
+  m_Size: {x: 1.3729692, y: 4.065347}
+  m_Direction: 0
 --- !u!1 &1235206788
 GameObject:
   m_ObjectHideFlags: 0
@@ -3031,12 +3127,15 @@ MonoBehaviour:
   offSetCentroAtaquePlayer: {x: 3.14, y: 0.57}
   dimensoesAtaque: {x: 2.72, y: 4.6}
   offSetAtaqueAbaixada: {x: 0, y: -0.7}
+  forcaAplicadaAoEntrarNoEstadoDeTomarDano: {x: -7, y: 20}
   anim: {fileID: 6603702313571163832}
   informacoesPlayer: {fileID: 11400000, guid: cd7b505426ff6784098cfa444cbaf08b, type: 2}
   distanciaChecagemPulo: 0.72
   meshPersonagem: {fileID: 6603702313571163831}
   controladorEfeitosEspadaKaede: {fileID: 8073491323820920438}
   transformPosicaoInstanciaSubItem: {fileID: 2020664719}
+  colisorRecebimentoDeDano: {fileID: 739624785}
+  colisorRecebimentoDeDanoAbaixada: {fileID: 1110284038}
   controldadorDeCenaPlayer: {fileID: 11400000, guid: 7357c71cf575b404ba93074952af3534, type: 2}
   mapeadorDeBotoes: {fileID: 11400000, guid: 87be08610859ca3459354c5e14b2c0da, type: 2}
   materialFisicoParado: {fileID: 6200000, guid: ebc85e14d2f8f7d4eb23dac0bf4d87e8, type: 2}
@@ -3058,6 +3157,8 @@ Transform:
   - {fileID: 1080481874}
   - {fileID: 2020664719}
   - {fileID: 5831810673115776013}
+  - {fileID: 739624786}
+  - {fileID: 1110284039}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26744,6 +26845,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 975528748}
     m_Modifications:
+    - target: {fileID: 5378387861200455106, guid: 6aa0f75825223f4468237e66fc10487f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5378387861200455106, guid: 6aa0f75825223f4468237e66fc10487f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.29281795
+      objectReference: {fileID: 0}
     - target: {fileID: 5378387861200455107, guid: 6aa0f75825223f4468237e66fc10487f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
