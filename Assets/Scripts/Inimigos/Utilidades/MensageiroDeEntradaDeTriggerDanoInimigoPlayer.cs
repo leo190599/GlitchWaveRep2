@@ -7,7 +7,7 @@ public class MensageiroDeEntradaDeTriggerDanoInimigoPlayer : MonoBehaviour
     [SerializeField]
     protected InimigoBase inimigo;
     // Start is called before the first frame update
-    void OnTriggerEnter2D(Collider2D c)
+    void OnTriggerStay2D(Collider2D c)
     {
         ScriptPlayer sP=c.GetComponentInParent<ScriptPlayer>();
         if(sP!=null)

@@ -25,6 +25,8 @@ public class ScriptPlayer : MonoBehaviour
     private Vector2 offSetAtaqueAbaixada;
     [SerializeField]
     private Vector2 forcaAplicadaAoEntrarNoEstadoDeTomarDano;
+    [SerializeField]
+    private float tempoDeInvencibilidadeAoTomarDano=1;
 
     [Header("Parametros Debug")]
     [SerializeField]
@@ -44,6 +46,9 @@ public class ScriptPlayer : MonoBehaviour
     private GameObject colisorRecebimentoDeDano;
     [SerializeField]
     private GameObject colisorRecebimentoDeDanoAbaixada;
+    [SerializeField]
+    private MensageiroPlayerShaderPersonagem mensageiroPlayerShaderPersonagem;
+    private bool InvencibilidadeAtiva=false;
     private List<RaycastHit2D>raycastsPulo;
     private Collider2D[] colisoresAtaque;
     
@@ -124,7 +129,7 @@ public class ScriptPlayer : MonoBehaviour
             }
         }
         //Mudar depois
-        
+        /*
         if(Input.GetKeyDown(KeyCode.W))
         {
             informacoesPlayer.ReceberDano(10);
@@ -133,6 +138,7 @@ public class ScriptPlayer : MonoBehaviour
         {
             informacoesPlayer.Curar(10);
         }
+        */
         Debug.Log(estadoPlayerAtual);
     }
 
@@ -276,8 +282,26 @@ public class ScriptPlayer : MonoBehaviour
 
     public void ReceberDano(float quantidadeDeDano)
     {
-        informacoesPlayer.ReceberDano(quantidadeDeDano);
-        TrocaEstadoPlayer(new EstadoTomouDanoPlayer());
+        if(!InvencibilidadeAtiva)
+        {
+            informacoesPlayer.ReceberDano(quantidadeDeDano);
+            TrocaEstadoPlayer(new EstadoTomouDanoPlayer());
+            AtivarInvencibilidade();
+        }
+    }
+
+    public void AtivarInvencibilidade()
+    {
+        InvencibilidadeAtiva=true;
+        mensageiroPlayerShaderPersonagem.setEfeitoInvencibilidade(true);
+        StartCoroutine(DesativarInvencibilidadeCorrotina());
+    }
+
+    public IEnumerator DesativarInvencibilidadeCorrotina()
+    {
+        yield return new WaitForSeconds(tempoDeInvencibilidadeAoTomarDano);
+        InvencibilidadeAtiva=false;
+        mensageiroPlayerShaderPersonagem.setEfeitoInvencibilidade(false);
     }
     public void Curar(float quantidadeDeCura)
     {

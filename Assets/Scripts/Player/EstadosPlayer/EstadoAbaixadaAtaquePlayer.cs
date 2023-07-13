@@ -40,4 +40,9 @@ public class EstadoAbaixadaAtaquePlayer : EstadoAtivoBasePlayer
         base.EventoFinalAnimacao();
         player.TrocaEstadoPlayer(new EstadoAbaixadaPlayer());
     }
+    public override void FinalizarEstado()
+    {
+        base.FinalizarEstado();
+        player.DesativarEfeitosEspada();
+    }
 }

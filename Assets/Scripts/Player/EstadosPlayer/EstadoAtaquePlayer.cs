@@ -57,5 +57,10 @@ public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
             player.TrocaEstadoPlayer(new EstadoIdlePlayer());
         }
     }
-    
+
+    public override void FinalizarEstado()
+    {
+        base.FinalizarEstado();
+        player.DesativarEfeitosEspada();
+    }
 }

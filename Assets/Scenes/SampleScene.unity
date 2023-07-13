@@ -3136,6 +3136,7 @@ MonoBehaviour:
   transformPosicaoInstanciaSubItem: {fileID: 2020664719}
   colisorRecebimentoDeDano: {fileID: 739624785}
   colisorRecebimentoDeDanoAbaixada: {fileID: 1110284038}
+  mensageiroPlayerShaderPersonagem: {fileID: 6768557203796335983}
   controldadorDeCenaPlayer: {fileID: 11400000, guid: 7357c71cf575b404ba93074952af3534, type: 2}
   mapeadorDeBotoes: {fileID: 11400000, guid: 87be08610859ca3459354c5e14b2c0da, type: 2}
   materialFisicoParado: {fileID: 6200000, guid: ebc85e14d2f8f7d4eb23dac0bf4d87e8, type: 2}
@@ -26416,6 +26417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2272051654505258269}
   - component: {fileID: 6768557203796335982}
+  - component: {fileID: 6768557203796335983}
   m_Layer: 0
   m_Name: Kaede
   m_TagString: Untagged
@@ -27565,7 +27567,7 @@ SkinnedMeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3565670347436852532}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -27678,6 +27680,18 @@ SkinnedMeshRenderer:
     m_Center: {x: 9.313226e-10, y: 0.0030227182, z: -0.0056767063}
     m_Extent: {x: 0.018800601, y: 0.0048617013, z: 0.02395174}
   m_DirtyAABB: 0
+--- !u!114 &6768557203796335983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3565670347436852532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9219411e224e11499da3da63323452c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6804738888541349471
 Transform:
   m_ObjectHideFlags: 0

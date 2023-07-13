@@ -52,4 +52,10 @@ public class EstadoPuloAtaquePlayer : EstadoNoArBasePlayer
             player.Atacar();
             player.DesativarEfeitosEspada();
     }
+    public override void FinalizarEstado()
+    {
+        base.FinalizarEstado();
+        player.DesativarEfeitosEspada();
+
+    }
 }
