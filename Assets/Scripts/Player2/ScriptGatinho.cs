@@ -25,6 +25,10 @@ public class ScriptGatinho : MonoBehaviour
     private GameObject mira;
     [SerializeField]
     private TrailRenderer tr;
+    [SerializeField]
+    private Animator anim;
+    [SerializeField]
+    private CapsuleCollider2D col;
 
     [SerializeField]
     private ControladorDeCena controladorDeCena;
@@ -48,6 +52,9 @@ public class ScriptGatinho : MonoBehaviour
         cam=Camera.main;
         malha.SetActive(false);
         mira.SetActive(false);
+        col.enabled=false;
+        tr.gameObject.SetActive(false);
+        anim.SetBool("Atacando",false);
     }
 
     // Update is called once per frame
@@ -75,6 +82,9 @@ public class ScriptGatinho : MonoBehaviour
                 if(Input.GetMouseButtonUp(0))
                 {
                     mira.SetActive(false);
+                    col.enabled=true;
+                    tr.gameObject.SetActive(true);
+                    anim.SetBool("Atacando",true);
                     estadoGatinho=EstadoGatinho.atacando;
                 }
             }
@@ -123,7 +133,10 @@ public class ScriptGatinho : MonoBehaviour
             estadoGatinho=EstadoGatinho.desativado;
             EsperandoADesativacao=false;
             ultimoInimigoAtingido=null;
+            anim.SetBool("Atacando",false);
             tr.Clear();
+            tr.gameObject.SetActive(false);
             malha.SetActive(false);
+            col.enabled=false;
         }
 }

@@ -27,8 +27,12 @@ public class ScriptPlayer : MonoBehaviour
     private Vector2 forcaAplicadaAoEntrarNoEstadoDeTomarDano;
     [SerializeField]
     private float tempoDeInvencibilidadeAoTomarDano=1;
+    [SerializeField]
+    private float danoRecebidoGlitch=.5f;
 
     [Header("Parametros Debug")]
+    [SerializeField]
+    private bool glitchAtivo=false;
     [SerializeField]
     private Animator anim;
     [SerializeField]
@@ -51,6 +55,7 @@ public class ScriptPlayer : MonoBehaviour
     private bool InvencibilidadeAtiva=false;
     private List<RaycastHit2D>raycastsPulo;
     private Collider2D[] colisoresAtaque;
+    private IEnumerator corrotinaReceberDanoGlitch;
     
 
     [Header("Scriptable objects")]
@@ -112,6 +117,10 @@ public class ScriptPlayer : MonoBehaviour
             if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoPause))
             {
                 controldadorDeCenaPlayer.TrocarEstadoAtual(ControladorDeCena.TipoEstadoCena.pausado);
+            }
+            if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoGlitch))
+            {
+                AlternarGlitch();
             }
         }
         else if(controldadorDeCenaPlayer.getEstadoCena==ControladorDeCena.TipoEstadoCena.pausado)
@@ -282,7 +291,7 @@ public class ScriptPlayer : MonoBehaviour
 
     public void ReceberDano(float quantidadeDeDano)
     {
-        if(!InvencibilidadeAtiva)
+        if(!InvencibilidadeAtiva && !glitchAtivo)
         {
             informacoesPlayer.ReceberDano(quantidadeDeDano);
             TrocaEstadoPlayer(new EstadoTomouDanoPlayer());
@@ -297,11 +306,52 @@ public class ScriptPlayer : MonoBehaviour
         StartCoroutine(DesativarInvencibilidadeCorrotina());
     }
 
+    public void AlternarGlitch()
+    {
+        if(glitchAtivo)
+        {
+            DesativarGlitch();
+        }
+        else
+        {
+            AtivarGlitch();
+        }
+    }
+
+    public void AtivarGlitch()
+    {
+        if(informacoesPlayer.GetVidaAtual>danoRecebidoGlitch)
+        {
+            glitchAtivo=true;
+            mensageiroPlayerShaderPersonagem.setEfeitoGlitch(true);
+            corrotinaReceberDanoGlitch=ReceberDanoGlitch();
+            StartCoroutine(corrotinaReceberDanoGlitch);
+        }
+    }
+    public void DesativarGlitch()
+    {
+        glitchAtivo=false;
+        mensageiroPlayerShaderPersonagem.setEfeitoGlitch(false);
+        StopCoroutine(corrotinaReceberDanoGlitch);
+    }
     public IEnumerator DesativarInvencibilidadeCorrotina()
     {
         yield return new WaitForSeconds(tempoDeInvencibilidadeAoTomarDano);
         InvencibilidadeAtiva=false;
         mensageiroPlayerShaderPersonagem.setEfeitoInvencibilidade(false);
+    }
+    public IEnumerator ReceberDanoGlitch()
+    {
+        while(true)
+        {
+            informacoesPlayer.ReceberDano(danoRecebidoGlitch);
+            if(informacoesPlayer.GetVidaAtual<=danoRecebidoGlitch)
+            {
+                mensageiroPlayerShaderPersonagem.setEfeitoGlitch(false);
+                StopCoroutine(corrotinaReceberDanoGlitch);
+            }
+            yield return new WaitForSeconds(1);
+        }
     }
     public void Curar(float quantidadeDeCura)
     {
