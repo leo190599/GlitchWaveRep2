@@ -56,6 +56,7 @@ public class ScriptPlayer : MonoBehaviour
     private List<RaycastHit2D>raycastsPulo;
     private Collider2D[] colisoresAtaque;
     private IEnumerator corrotinaReceberDanoGlitch;
+    private EstadoBasePlayer estadoPlayerAtual;
     
 
     [Header("Scriptable objects")]
@@ -63,7 +64,6 @@ public class ScriptPlayer : MonoBehaviour
     private ControladorDeCena controldadorDeCenaPlayer;
     [SerializeField]
     private MapeadorDeBotoes mapeadorDeBotoes;
-    private EstadoBasePlayer estadoPlayerAtual;
     
     [Header("Materiais Fisicos")]
     [SerializeField]
@@ -90,7 +90,8 @@ public class ScriptPlayer : MonoBehaviour
         abaixada=5,
         abaixadaAtacando=6,
         pulandoAtacando=7,
-        levandoDano=8
+        levandoDano=8,
+        morte=9
     }
     void Start()
     {
@@ -294,8 +295,16 @@ public class ScriptPlayer : MonoBehaviour
         if(!InvencibilidadeAtiva && !glitchAtivo)
         {
             informacoesPlayer.ReceberDano(quantidadeDeDano);
-            TrocaEstadoPlayer(new EstadoTomouDanoPlayer());
-            AtivarInvencibilidade();
+            if(informacoesPlayer.GetVidaAtual>0)
+            {
+                TrocaEstadoPlayer(new EstadoTomouDanoPlayer());
+                AtivarInvencibilidade();
+            }
+            else
+            {
+                anim.updateMode=AnimatorUpdateMode.UnscaledTime;
+                TrocarAnimPlayer(EstadosAnimacao.morte);
+            }
         }
     }
 
@@ -347,6 +356,7 @@ public class ScriptPlayer : MonoBehaviour
             informacoesPlayer.ReceberDano(danoRecebidoGlitch);
             if(informacoesPlayer.GetVidaAtual<=danoRecebidoGlitch)
             {
+                glitchAtivo=false;
                 mensageiroPlayerShaderPersonagem.setEfeitoGlitch(false);
                 StopCoroutine(corrotinaReceberDanoGlitch);
             }

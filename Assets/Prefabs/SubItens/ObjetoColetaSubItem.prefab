@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 693325616518822423}
   - component: {fileID: 693325616518822416}
   - component: {fileID: -4115603876629495662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ObjetoColetaSubItem
-  m_TagString: Untagged
+  m_TagString: ColiderFantasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,4 +123,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64fdc5b2a97e1b345ae52f67c188b305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subItem: {fileID: 0}
+  subItem: {fileID: 11400000, guid: 663ddfe8788af404d9df58b010c93140, type: 2}

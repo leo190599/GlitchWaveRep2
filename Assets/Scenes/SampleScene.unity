@@ -2798,17 +2798,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -4115603876629495662, guid: eec812d88837c14488da5d41a8898157, type: 3}
-      propertyPath: subItem
-      value: 
-      objectReference: {fileID: 11400000, guid: 663ddfe8788af404d9df58b010c93140, type: 2}
     - target: {fileID: 693325616518822417, guid: eec812d88837c14488da5d41a8898157, type: 3}
       propertyPath: m_Name
       value: ObjetoColetaSubItem
-      objectReference: {fileID: 0}
-    - target: {fileID: 693325616518822417, guid: eec812d88837c14488da5d41a8898157, type: 3}
-      propertyPath: m_TagString
-      value: ColiderFantasma
       objectReference: {fileID: 0}
     - target: {fileID: 693325616518822421, guid: eec812d88837c14488da5d41a8898157, type: 3}
       propertyPath: m_RootOrder
