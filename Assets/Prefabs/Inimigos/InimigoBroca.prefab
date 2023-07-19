@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 5830530537353752}
   - component: {fileID: 5830530537353758}
   - component: {fileID: 5830530537353753}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColliderRecebimentoDeDano
   m_TagString: ColiderFantasma
   m_Icon: {fileID: 0}

@@ -149,7 +149,7 @@ public class ScriptPlayer : MonoBehaviour
             informacoesPlayer.Curar(10);
         }
         */
-        Debug.Log(estadoPlayerAtual);
+        //Debug.Log(estadoPlayerAtual);
     }
 
     void FixedUpdate()
@@ -231,6 +231,14 @@ public class ScriptPlayer : MonoBehaviour
     {
         Instantiate(objeto,posicao,rotacao);
     }
+
+    public void instanciarObjeto(GameObject objeto,Vector3 posicao, Quaternion rotacao,Vector3 escala)
+    {
+        GameObject instancia;
+        instancia=Instantiate(objeto,posicao,rotacao);
+        instancia.transform.localScale=escala;
+    }
+
 
     public void Atacar()
     {

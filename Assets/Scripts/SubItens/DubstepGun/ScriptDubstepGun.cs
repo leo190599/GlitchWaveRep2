@@ -7,14 +7,18 @@ public class ScriptDubstepGun : MonoBehaviour
     [SerializeField]
     private float tempoDeVida=3;
     // Start is called before the first frame update
+    [SerializeField]
+    private float danoRaio=70;
+    [SerializeField]
+    private MeshRenderer meshRaio;
     void Start()
     {
+        meshRaio.material.SetFloat("_Direcao",-Mathf.Sign(transform.localScale.x));
         Destroy(gameObject,tempoDeVida);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CausarDano(MensageiroDeEntradaDeTriggerDanoPlayerInimigo mensageiroDeEntradaDeTriggerDanoPlayerInimigo)
     {
-        
+        mensageiroDeEntradaDeTriggerDanoPlayerInimigo.LevarDano(danoRaio);
     }
 }

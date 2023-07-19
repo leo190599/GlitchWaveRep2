@@ -23,8 +23,7 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
                 player.GetInformacoesPlayer.ReceberDano(player.GetInformacoesPlayer.GetSubItemObjetoScriptavel.GetCustoDeVida);
 
                 player.instanciarObjeto(subItem,player.GetTransformPosicaoInstanciaSubItem.position,
-                 player.GetOlhandoParaDireita?Quaternion.Euler(0,90,0):Quaternion.Euler(0,270,0)
-                 );
+                Quaternion.Euler(0,0,0), new Vector3(player.GetOlhandoParaDireita?1:-1,1,1));
             }
             else
             {

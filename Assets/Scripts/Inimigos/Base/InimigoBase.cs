@@ -14,7 +14,7 @@ public class InimigoBase : MonoBehaviour
     public virtual void LevarDano(float quantidadeDeDano)
     {
         vida-=quantidadeDeDano;
-        if(vida<0)
+        if(vida<=0)
         {
             Morrer();
         }
