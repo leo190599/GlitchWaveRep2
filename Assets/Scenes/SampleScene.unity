@@ -2550,7 +2550,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 8
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2585,7 +2585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDeMovimento: 18
-  forcaPulo: 30
+  forcaPulo: 48
   olhandoParaDireita: 1
   perdaDeMovimentoNoAr: 0
   vidaCuradaPorColisaoParticula: 3
@@ -2754,8 +2754,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648980418}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -8.6, y: -8.05, z: 39.65}
-  m_LocalScale: {x: 12.381601, y: 12.381601, z: 12.381601}
+  m_LocalPosition: {x: -5.1605, y: -7.0384, z: 39.65}
+  m_LocalScale: {x: 17.246332, y: 13.811676, z: 12.381601}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
