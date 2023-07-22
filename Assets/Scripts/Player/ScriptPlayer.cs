@@ -57,6 +57,8 @@ public class ScriptPlayer : MonoBehaviour
     private Collider2D[] colisoresAtaque;
     private IEnumerator corrotinaReceberDanoGlitch;
     private EstadoBasePlayer estadoPlayerAtual;
+    [SerializeField]
+    private LayerMask layerChao;
     
 
     [Header("Scriptable objects")]
@@ -450,4 +452,5 @@ public class ScriptPlayer : MonoBehaviour
     public Transform GetTransformPosicaoInstanciaSubItem=>transformPosicaoInstanciaSubItem;
     public Animator GetAnimator=>anim;
     public Vector2 GetForcaAplicadaAoEntrarNoEstadoDeTomarDano=>forcaAplicadaAoEntrarNoEstadoDeTomarDano;
+    public LayerMask GetLayerChao=>layerChao;
 }
