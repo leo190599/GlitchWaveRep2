@@ -56,7 +56,7 @@ public class ControladorDeCena : ScriptableObject
                 {
                     EventosEstadoMorreu.Invoke();
                 }
-                Time.timeScale=1;
+                Time.timeScale=0;
             break;
 
             case TipoEstadoCena.pausado:
@@ -83,7 +83,7 @@ public class ControladorDeCena : ScriptableObject
                 {
                     EventosEstadoVenceu.Invoke();
                 }
-                Time.timeScale=1;
+                Time.timeScale=0;
             break;
 
             default:

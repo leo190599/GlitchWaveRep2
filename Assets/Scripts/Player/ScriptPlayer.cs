@@ -140,6 +140,13 @@ public class ScriptPlayer : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
+        else if(controldadorDeCenaPlayer.getEstadoCena==ControladorDeCena.TipoEstadoCena.venceu)
+        {
+            if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoPause))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+        }
         //Mudar depois
         /*
         if(Input.GetKeyDown(KeyCode.W))
