@@ -17,12 +17,7 @@ public class ScriptPlayer : MonoBehaviour
     private float perdaDeMovimentoNoAr=0f;
     [SerializeField]
     private float vidaCuradaPorColisaoParticula=1;
-    [SerializeField]
-    private Vector2 offSetCentroAtaquePlayer;
-    [SerializeField]
-    private Vector2 dimensoesAtaque;
-    [SerializeField]
-    private Vector2 offSetAtaqueAbaixada;
+
     [SerializeField]
     private Vector2 forcaAplicadaAoEntrarNoEstadoDeTomarDano;
     [SerializeField]
@@ -59,6 +54,8 @@ public class ScriptPlayer : MonoBehaviour
     private EstadoBasePlayer estadoPlayerAtual;
     [SerializeField]
     private LayerMask layerChao;
+    [SerializeField]
+    private BoxCollider2D colisorEspada;
     
 
     [Header("Scriptable objects")]
@@ -105,7 +102,10 @@ public class ScriptPlayer : MonoBehaviour
         DesativarColisorRecebimentoDeDanoAbaixada();
         //teste
         rotacaoAlvo=meshPersonagem.transform.eulerAngles;
+        //Application.targetFrameRate=1;
         //teste
+
+        DesativarColisorEspada();
 
         estadoPlayerAtual=new EstadoIdlePlayer();
         estadoPlayerAtual.IniciarEstadoPlayer(this);
@@ -147,18 +147,6 @@ public class ScriptPlayer : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
-        //Mudar depois
-        /*
-        if(Input.GetKeyDown(KeyCode.W))
-        {
-            informacoesPlayer.ReceberDano(10);
-        }
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            informacoesPlayer.Curar(10);
-        }
-        */
-        //Debug.Log(estadoPlayerAtual);
     }
 
     void FixedUpdate()
@@ -194,28 +182,6 @@ public class ScriptPlayer : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.DrawLine(col.bounds.center,new Vector3(col.bounds.center.x,col.bounds.min.y-distanciaChecagemPulo,col.bounds.min.z));
-        if(olhandoParaDireita)
-        {
-            Gizmos.DrawWireCube(new Vector3(transform.position.x+offSetCentroAtaquePlayer.x,transform.position.y+offSetCentroAtaquePlayer.y,transform.position.z),dimensoesAtaque);
-        }
-        else
-        {
-            Gizmos.DrawWireCube(new Vector3(transform.position.x-offSetCentroAtaquePlayer.x,transform.position.y+offSetCentroAtaquePlayer.y,transform.position.z),dimensoesAtaque);
-        }
-
-        Gizmos.color=Color.green;
-
-        if(olhandoParaDireita)
-        {
-            Gizmos.DrawWireCube(new Vector3(transform.position.x+offSetCentroAtaquePlayer.x+offSetAtaqueAbaixada.x,transform.position.y
-            +offSetCentroAtaquePlayer.y+offSetAtaqueAbaixada.y,transform.position.z),dimensoesAtaque);
-        }
-        else
-        {
-            Gizmos.DrawWireCube(new Vector3(transform.position.x-offSetCentroAtaquePlayer.x-offSetAtaqueAbaixada.x,transform.position.y
-            +offSetCentroAtaquePlayer.y+offSetAtaqueAbaixada.y,transform.position.z),dimensoesAtaque);
-        }
-        Gizmos.color=Color.white;
     }
 
     void OnEnable()
@@ -248,51 +214,19 @@ public class ScriptPlayer : MonoBehaviour
         instancia.transform.localScale=escala;
     }
 
-
-    public void Atacar()
+    public void AtivarColisorEspada()
     {
-        MensageiroDeEntradaDeTriggerDanoPlayerInimigo mensageiroDeEntradaDeTriggerDanoPlayerInimigo;
-        //Debug.Log("a");
-        if(olhandoParaDireita)
-        {
-            colisoresAtaque=Physics2D.OverlapBoxAll(new Vector2(transform.position.x,transform.position.y)+offSetCentroAtaquePlayer,dimensoesAtaque,0);
-        }
-        else
-        {
-            colisoresAtaque=Physics2D.OverlapBoxAll(new Vector2(transform.position.x,transform.position.y)-offSetCentroAtaquePlayer,dimensoesAtaque,0);
-        }
-        foreach(Collider2D c in colisoresAtaque)
-        {
-            mensageiroDeEntradaDeTriggerDanoPlayerInimigo=c.gameObject.GetComponent<MensageiroDeEntradaDeTriggerDanoPlayerInimigo>();
-            if(mensageiroDeEntradaDeTriggerDanoPlayerInimigo!=null)
-            {
-                mensageiroDeEntradaDeTriggerDanoPlayerInimigo.LevarDano(informacoesPlayer.GetDanoAtaqueBasico);
-            }
-        }
+        colisorEspada.enabled=true;
+    }
+    public void DesativarColisorEspada()
+    {
+        StartCoroutine(CorrotinaDesativarEspada());
     }
 
-    public void AtacarAbaixada()
+    private IEnumerator CorrotinaDesativarEspada()
     {
-        MensageiroDeEntradaDeTriggerDanoPlayerInimigo mensageiroDeEntradaDeTriggerDanoPlayerInimigo;
-        //Debug.Log("a");
-        if(olhandoParaDireita)
-        {
-            colisoresAtaque=Physics2D.OverlapBoxAll(new Vector2(transform.position.x+offSetAtaqueAbaixada.x,transform.position.y
-            +offSetAtaqueAbaixada.y)+offSetCentroAtaquePlayer,dimensoesAtaque,0);
-        }
-        else
-        {
-            colisoresAtaque=Physics2D.OverlapBoxAll(new Vector2(transform.position.x-offSetAtaqueAbaixada.x,transform.position.y
-            +offSetAtaqueAbaixada.y)-offSetCentroAtaquePlayer,dimensoesAtaque,0);
-        }
-        foreach(Collider2D c in colisoresAtaque)
-        {
-            mensageiroDeEntradaDeTriggerDanoPlayerInimigo=c.gameObject.GetComponent<MensageiroDeEntradaDeTriggerDanoPlayerInimigo>();
-            if(mensageiroDeEntradaDeTriggerDanoPlayerInimigo!=null)
-            {
-                mensageiroDeEntradaDeTriggerDanoPlayerInimigo.LevarDano(informacoesPlayer.GetDanoAtaqueBasico);
-            }
-        }
+        yield return new WaitForFixedUpdate();
+        colisorEspada.enabled=false;
     }
 
     public void AtivarColisorRecebimentoDeDanoAbaixada()

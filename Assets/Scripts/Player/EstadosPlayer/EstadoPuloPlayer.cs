@@ -28,7 +28,7 @@ public class EstadoPuloPlayer : EstadoNoArBasePlayer
         player.GetRigidbody2D.velocity=new Vector2(Mathf.Clamp(player.GetRigidbody2D.velocity.x,-player.GetVelocidadeDeMovimento,player.GetVelocidadeDeMovimento)
         ,player.GetRigidbody2D.velocity.y);
         
-        Debug.Log(player.GetRigidbody2D.velocity);
+        //Debug.Log(player.GetRigidbody2D.velocity);
 
         player.GetRigidbody2D.Cast(Vector2.down,player.GetRaycastsPulo,player.GetDistanciaChecagemPulo);
         //Essa checagem é feita para garantir que a personagem não volte para o estaddo Idle antes de sair do chão

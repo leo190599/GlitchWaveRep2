@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
 {
-    private bool atacou=false;
     private float tempoDecorridoNoEstado=0;
     private float tempoMaximoNoEstado;
     //private bool executouEventoFinalAnimacao=false;
@@ -12,9 +11,10 @@ public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
     public override void IniciarEstadoPlayer(ScriptPlayer player)
     {
         base.IniciarEstadoPlayer(player);
-        player.GetRigidbody2D.velocity=new Vector2(0,player.GetRigidbody2D.velocity.y);  
+        player.GetRigidbody2D.velocity=new Vector2(0,0);  
         //player.StartCoroutine(player.TrocaEstadoPlayerCorrotina(new EstadoIdlePlayer(),player.GetAnimator.GetCurrentAnimatorStateInfo(1).length));
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.atacando);
+        player.GetRigidbody2D.sharedMaterial=player.GetMaterialFisicoParado;
     }
 
     public override void AtualizarEstado()
@@ -29,25 +29,20 @@ public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
     public override void EventoInicioAnimacao()
     {
         base.EventoInicioAnimacao();
-        player.AtivarEfeitosEspada();
+        
         tempoMaximoNoEstado=player.GetAnimator.GetCurrentAnimatorStateInfo(1).length;
     }
 
     public override void EventoAnimacao()
     {
         base.EventoAnimacao();
-        if(!atacou)
-        {
-            player.Atacar();
-            atacou=true;
-            player.DesativarEfeitosEspada();
-        }
+        player.AtivarEfeitosEspada();
+        player.AtivarColisorEspada();
     }
 
     public override void EventoFinalAnimacao()
     {
         base.EventoFinalAnimacao();
-        
         if(Input.GetAxisRaw(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)!=0)
         {
             player.TrocaEstadoPlayer(new EstadoAndandoPlayer());
@@ -62,5 +57,6 @@ public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
     {
         base.FinalizarEstado();
         player.DesativarEfeitosEspada();
+        player.DesativarColisorEspada();
     }
 }

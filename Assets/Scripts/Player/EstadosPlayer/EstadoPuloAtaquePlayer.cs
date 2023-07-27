@@ -13,15 +13,12 @@ public class EstadoPuloAtaquePlayer : EstadoNoArBasePlayer
     public override void AtualizarEstadoFixado()
     {
         base.AtualizarEstadoFixado();
-        //if(Mathf.Abs(player.GetRigidbody2D.velocity.x+Mathf.Lerp(Input.GetAxis(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)*player.GetVelocidadeDeMovimento,0,player.GetPerdaDeMovimentoNoAr))<player.GetVelocidadeDeMovimento)
-        //{
-            player.GetRigidbody2D.AddForce(new Vector2(
-            Mathf.Lerp(Input.GetAxis(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)*player.GetVelocidadeDeMovimento,0,player.GetPerdaDeMovimentoNoAr),0));
-        //}
+        player.GetRigidbody2D.AddForce(new Vector2(
+        Mathf.Lerp(Input.GetAxis(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)*player.GetVelocidadeDeMovimento,0,player.GetPerdaDeMovimentoNoAr),0));
         player.GetRigidbody2D.velocity=new Vector2(Mathf.Clamp(player.GetRigidbody2D.velocity.x,-player.GetVelocidadeDeMovimento,player.GetVelocidadeDeMovimento)
         ,player.GetRigidbody2D.velocity.y);
 
-        Debug.Log(player.GetRigidbody2D.velocity);
+       // Debug.Log(player.GetRigidbody2D.velocity);
 
         player.GetRigidbody2D.Cast(Vector2.down,player.GetRaycastsPulo,player.GetDistanciaChecagemPulo);
         //Essa checagem é feita para garantir que a personagem não volte para o estaddo Idle antes de sair do chão
@@ -49,18 +46,17 @@ public class EstadoPuloAtaquePlayer : EstadoNoArBasePlayer
     public override void EventoInicioAnimacao()
     {
         base.EventoInicioAnimacao();
-        player.AtivarEfeitosEspada();
     }
     public override void EventoAnimacao()
     {
         base.EventoAnimacao();
-            player.Atacar();
-            player.DesativarEfeitosEspada();
+        player.AtivarEfeitosEspada();
+        player.AtivarColisorEspada();
     }
     public override void FinalizarEstado()
     {
         base.FinalizarEstado();
         player.DesativarEfeitosEspada();
-
+        player.DesativarColisorEspada();
     }
 }

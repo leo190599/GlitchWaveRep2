@@ -25,15 +25,13 @@ public class EstadoAbaixadaAtaquePlayer : EstadoAtivoBasePlayer
     public override void EventoInicioAnimacao()
     {
         base.EventoInicioAnimacao();
-        player.AtivarEfeitosEspada();
         tempoMaximoNoEstado=player.GetAnimator.GetCurrentAnimatorStateInfo(1).length;
     }
     public override void EventoAnimacao()
     {
         base.EventoAnimacao();
-        player.AtacarAbaixada();
-        player.DesativarEfeitosEspada();
-        
+        player.AtivarEfeitosEspada();
+        player.AtivarColisorEspada();
     }
     public override void EventoFinalAnimacao()
     {
@@ -43,6 +41,7 @@ public class EstadoAbaixadaAtaquePlayer : EstadoAtivoBasePlayer
     public override void FinalizarEstado()
     {
         base.FinalizarEstado();
+        player.DesativarColisorEspada();
         player.DesativarEfeitosEspada();
     }
 }
