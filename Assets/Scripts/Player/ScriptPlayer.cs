@@ -24,6 +24,10 @@ public class ScriptPlayer : MonoBehaviour
     private float tempoDeInvencibilidadeAoTomarDano=1;
     [SerializeField]
     private float danoRecebidoGlitch=.5f;
+    [SerializeField]
+    private float tempoDash=1;
+    [SerializeField]
+    private float velDash=5;
 
     [Header("Parametros Debug")]
     [SerializeField]
@@ -56,6 +60,10 @@ public class ScriptPlayer : MonoBehaviour
     private LayerMask layerChao;
     [SerializeField]
     private BoxCollider2D colisorEspada;
+    private bool dashDireita=false;
+    private IEnumerator corrotinaEstado;
+    [SerializeField]
+    private TrailRenderer trailDash;
     
 
     [Header("Scriptable objects")]
@@ -104,6 +112,7 @@ public class ScriptPlayer : MonoBehaviour
         rotacaoAlvo=meshPersonagem.transform.eulerAngles;
         //Application.targetFrameRate=1;
         //teste
+        trailDash.gameObject.SetActive(false);
 
         DesativarColisorEspada();
 
@@ -124,6 +133,23 @@ public class ScriptPlayer : MonoBehaviour
             if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoGlitch))
             {
                 AlternarGlitch();
+            }
+            if(estadoPlayerAtual is EstadoAtivoBasePlayer)
+            {
+                if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoDashDireita))
+                {
+                    dashDireita=true;
+                    TrocaEstadoPlayer(new EstadoDashPlayer());
+                    corrotinaEstado=CorrotinaEstadoPlayer(tempoDash);
+                    StartCoroutine(corrotinaEstado);
+                }
+                else if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoDashEsquerda))
+                {
+                    dashDireita=false;
+                    TrocaEstadoPlayer(new EstadoDashPlayer());
+                    corrotinaEstado=CorrotinaEstadoPlayer(tempoDash);
+                    StartCoroutine(corrotinaEstado);
+                }
             }
         }
         else if(controldadorDeCenaPlayer.getEstadoCena==ControladorDeCena.TipoEstadoCena.pausado)
@@ -243,7 +269,7 @@ public class ScriptPlayer : MonoBehaviour
 
     public void ReceberDano(float quantidadeDeDano)
     {
-        if(!InvencibilidadeAtiva && !glitchAtivo)
+        if(!InvencibilidadeAtiva && !glitchAtivo && controldadorDeCenaPlayer.getEstadoCena==ControladorDeCena.TipoEstadoCena.jogando)
         {
             informacoesPlayer.ReceberDano(quantidadeDeDano);
             if(informacoesPlayer.GetVidaAtual>0)
@@ -328,6 +354,10 @@ public class ScriptPlayer : MonoBehaviour
 
     public void TrocaEstadoPlayer(EstadoBasePlayer novoEstado)
     {
+        if(corrotinaEstado!=null)
+        {
+            StopCoroutine(corrotinaEstado);
+        }
         estadoPlayerAtual.FinalizarEstado();
         estadoPlayerAtual=novoEstado;
         estadoPlayerAtual.IniciarEstadoPlayer(this);
@@ -336,6 +366,11 @@ public class ScriptPlayer : MonoBehaviour
     {
         yield return new WaitForSeconds(tempo);
         TrocaEstadoPlayer(novoEstado);
+    }
+    public IEnumerator CorrotinaEstadoPlayer(float tempo)
+    {
+        yield return new WaitForSeconds(tempo);
+        estadoPlayerAtual.EventoCorrotinaEstado();
     }
     public void RodarPersonagem(bool olhandoParaDireita)
     {
@@ -394,4 +429,7 @@ public class ScriptPlayer : MonoBehaviour
     public Animator GetAnimator=>anim;
     public Vector2 GetForcaAplicadaAoEntrarNoEstadoDeTomarDano=>forcaAplicadaAoEntrarNoEstadoDeTomarDano;
     public LayerMask GetLayerChao=>layerChao;
+    public bool GetDashDireita=>dashDireita;
+    public float GetVelDash=>velDash;
+    public TrailRenderer GetTrailDash=>trailDash;
 }

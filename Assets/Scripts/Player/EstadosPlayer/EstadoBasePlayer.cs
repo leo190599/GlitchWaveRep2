@@ -29,4 +29,8 @@ public abstract class EstadoBasePlayer : EstadoRaiz
     {
         
     }
+    public virtual void EventoCorrotinaEstado()
+    {
+        
+    }
 }
