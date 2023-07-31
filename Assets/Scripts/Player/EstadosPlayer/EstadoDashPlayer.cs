@@ -26,7 +26,7 @@ public class EstadoDashPlayer : EstadoBasePlayer
     public override void AtualizarEstadoFixado()
     {
         base.AtualizarEstadoFixado();
-         rh=Physics2D.Raycast(new Vector2(player.GetCapsuleCollider2D.bounds.center.x,player.GetCapsuleCollider2D.bounds.min.y),Vector2.down,6,player.GetLayerChao);
+         rh=Physics2D.Raycast(new Vector2(player.GetCapsuleCollider2D.bounds.center.x,player.GetCapsuleCollider2D.bounds.min.y),Vector2.down,4,player.GetLayerChao);
             //Debug.Log(Matematica.RotacaoDeVetor(rh.normal,-90*Input.GetAxisRaw("Horizontal")));
             if(rh.collider!=null)
             {

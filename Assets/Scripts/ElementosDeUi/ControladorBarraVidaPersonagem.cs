@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ControladorBarraVidaPersonagem : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class ControladorBarraVidaPersonagem : MonoBehaviour
     private ControladorBarraDeProgresso controladorBarraDeProgresso;
     [SerializeField]
     private InformacoesPlayer informacoesPlayer;
+    [SerializeField]
+    private TextMeshProUGUI textoVidaPlayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,7 @@ public class ControladorBarraVidaPersonagem : MonoBehaviour
     public void AlterarProgresso()
     {
         controladorBarraDeProgresso.AlterarProgresso(informacoesPlayer.GetPorcentagemDeVida);
+        textoVidaPlayer.text=informacoesPlayer.GetVidaAtual.ToString()+"/"+informacoesPlayer.GetVidaMaxima;
     }
     void OnEnable()
     {

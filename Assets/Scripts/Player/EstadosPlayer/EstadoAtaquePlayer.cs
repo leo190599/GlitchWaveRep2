@@ -36,6 +36,7 @@ public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
     public override void EventoAnimacao()
     {
         base.EventoAnimacao();
+        player.TocarAudio(player.GetAudioAtaqueBase);
         player.AtivarEfeitosEspada();
         player.AtivarColisorEspada();
     }

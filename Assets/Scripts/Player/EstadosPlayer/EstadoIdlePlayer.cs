@@ -8,6 +8,7 @@ public class EstadoIdlePlayer : EstadoAtivoBasePlayer
     public override void IniciarEstadoPlayer(ScriptPlayer player)
     {
         base.IniciarEstadoPlayer(player);
+        player.SetDadoDashNoAr(false);
         player.GetRigidbody2D.velocity=new Vector2(0,0);
         player.GetRigidbody2D.sharedMaterial=player.GetMaterialFisicoParado;
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.idle);

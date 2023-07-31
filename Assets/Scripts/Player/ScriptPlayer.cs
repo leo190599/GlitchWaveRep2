@@ -28,6 +28,9 @@ public class ScriptPlayer : MonoBehaviour
     private float tempoDash=1;
     [SerializeField]
     private float velDash=5;
+    [Header("Audios")]
+    [SerializeField]
+    private AudioClip audioAtaqueBase;
 
     [Header("Parametros Debug")]
     [SerializeField]
@@ -64,6 +67,9 @@ public class ScriptPlayer : MonoBehaviour
     private IEnumerator corrotinaEstado;
     [SerializeField]
     private TrailRenderer trailDash;
+    private bool dashDadoNoAr=false;
+    [SerializeField]
+    private AudioSource emissorDeAudio;
     
 
     [Header("Scriptable objects")]
@@ -134,11 +140,15 @@ public class ScriptPlayer : MonoBehaviour
             {
                 AlternarGlitch();
             }
-            if(estadoPlayerAtual is EstadoAtivoBasePlayer)
+            if(estadoPlayerAtual is EstadoAtivoBasePlayer && !dashDadoNoAr)
             {
                 if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoDashDireita))
                 {
                     dashDireita=true;
+                    if(estadoPlayerAtual is EstadoNoArBasePlayer)
+                    {
+                        dashDadoNoAr=true;
+                    }
                     TrocaEstadoPlayer(new EstadoDashPlayer());
                     corrotinaEstado=CorrotinaEstadoPlayer(tempoDash);
                     StartCoroutine(corrotinaEstado);
@@ -146,6 +156,10 @@ public class ScriptPlayer : MonoBehaviour
                 else if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoDashEsquerda))
                 {
                     dashDireita=false;
+                    if(estadoPlayerAtual is EstadoNoArBasePlayer)
+                    {
+                        dashDadoNoAr=true;
+                    }
                     TrocaEstadoPlayer(new EstadoDashPlayer());
                     corrotinaEstado=CorrotinaEstadoPlayer(tempoDash);
                     StartCoroutine(corrotinaEstado);
@@ -405,6 +419,17 @@ public class ScriptPlayer : MonoBehaviour
         StopCoroutine("TrocarAnimPlayerCorrotina");
         anim.SetInteger("EstadoAnim",(int)novoEstado);
     }
+    public void TocarAudio(AudioClip clipATocar)
+    {
+        emissorDeAudio.Stop();
+        emissorDeAudio.clip=clipATocar;
+        emissorDeAudio.Play();
+        //Debug.Log("a");
+    }
+    public void SetDadoDashNoAr(bool novoValor)
+    {
+        dashDadoNoAr=novoValor;
+    }
 
     public IEnumerator TrocarAnimPlayerCorrotina(EstadosAnimacao novoEstado,float tempo)
     {
@@ -432,4 +457,7 @@ public class ScriptPlayer : MonoBehaviour
     public bool GetDashDireita=>dashDireita;
     public float GetVelDash=>velDash;
     public TrailRenderer GetTrailDash=>trailDash;
+    public bool GetDashDadoNoAr=>dashDadoNoAr;
+    //Getters audios
+    public AudioClip GetAudioAtaqueBase=>audioAtaqueBase;
 }

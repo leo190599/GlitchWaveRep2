@@ -52,6 +52,7 @@ public class EstadoPuloAtaquePlayer : EstadoNoArBasePlayer
         base.EventoAnimacao();
         player.AtivarEfeitosEspada();
         player.AtivarColisorEspada();
+        player.TocarAudio(player.GetAudioAtaqueBase);
     }
     public override void FinalizarEstado()
     {

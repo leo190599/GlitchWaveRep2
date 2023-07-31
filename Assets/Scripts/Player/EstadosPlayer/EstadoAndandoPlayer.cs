@@ -10,6 +10,7 @@ public class EstadoAndandoPlayer : EstadoAtivoBasePlayer
         base.IniciarEstadoPlayer(player);
          player.GetRigidbody2D.velocity=new Vector2(Input.GetAxis(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)*player.GetVelocidadeDeMovimento,player.GetRigidbody2D.velocity.y);
         player.GetRigidbody2D.sharedMaterial=player.GetMaterialFisicoAndando;
+        player.SetDadoDashNoAr(false);
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.correndo);
     }
     public override void AtualizarEstado()
