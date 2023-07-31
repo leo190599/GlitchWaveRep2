@@ -11,6 +11,7 @@ public class InimigoBase : MonoBehaviour
     [SerializeField]
     protected float dano=10;
     // Start is called before the first frame update
+
     public virtual void LevarDano(float quantidadeDeDano)
     {
         vida-=quantidadeDeDano;

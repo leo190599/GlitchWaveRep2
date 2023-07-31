@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 100
-  vidaMaxima: 100
+  vidaMaxima: 15
   dano: 10
   vel: 0
   particulasMorte: {fileID: 4571526622080158357, guid: 770a8b2a919adca48983660dfacb5599, type: 3}

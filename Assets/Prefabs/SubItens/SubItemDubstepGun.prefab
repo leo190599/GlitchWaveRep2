@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 4553868961734615167}
   m_Layer: 10
   m_Name: Colisor
-  m_TagString: Untagged
+  m_TagString: ColiderFantasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

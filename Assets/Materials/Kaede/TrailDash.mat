@@ -105,7 +105,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Emissao: 13.34
+    - _Emissao: 26.57
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -126,7 +126,8 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 0, b: 0.6703186, a: 1}
     - _Color: {r: 1, g: 0, b: 0.6703186, a: 1}
-    - _Cor: {r: 0, g: 0.77827597, b: 1, a: 0}
+    - _Cor: {r: 0.042530537, g: 0, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Escala: {r: 0.25, g: 0.25, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
