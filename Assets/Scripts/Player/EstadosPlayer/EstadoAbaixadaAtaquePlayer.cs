@@ -9,6 +9,7 @@ public class EstadoAbaixadaAtaquePlayer : EstadoAtivoBasePlayer
     public override void IniciarEstadoPlayer(ScriptPlayer player)
     {
         base.IniciarEstadoPlayer(player);
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.abaixadaAtacando);
     }
 
@@ -42,6 +43,7 @@ public class EstadoAbaixadaAtaquePlayer : EstadoAtivoBasePlayer
     public override void FinalizarEstado()
     {
         base.FinalizarEstado();
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezeRotation;
         player.DesativarColisorEspada();
         player.DesativarEfeitosEspada();
     }

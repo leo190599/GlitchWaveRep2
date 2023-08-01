@@ -10,6 +10,7 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
         base.IniciarEstadoPlayer(player);
         player.GetRigidbody2D.velocity=(new Vector2(0,0));
         player.GetRigidbody2D.sharedMaterial=player.GetMaterialFisicoParado;
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.usandoSubItem); 
     }
 
@@ -48,5 +49,10 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
         {
             player.TrocaEstadoPlayer(new EstadoIdlePlayer());
         }
+    }
+    public override void FinalizarEstado()
+    {
+        base.FinalizarEstado();
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezeRotation;
     }
 }

@@ -61,16 +61,10 @@
             "m_Id": "f4844bfc7b134d7c83a80ddedbbd22cf"
         },
         {
-            "m_Id": "683d2ff923814e07a60ff17d063867ef"
-        },
-        {
             "m_Id": "2bceac604da44ed6abbac81b9cd99807"
         },
         {
             "m_Id": "2e5b11458e984377b97927f0b00c3470"
-        },
-        {
-            "m_Id": "0b527d8d3cf3407a850ad619ef9b4a2c"
         },
         {
             "m_Id": "e3706e59384c4df49023fd8f125ab76d"
@@ -103,20 +97,6 @@
     "m_GroupDatas": [],
     "m_StickyNoteDatas": [],
     "m_Edges": [
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "0b527d8d3cf3407a850ad619ef9b4a2c"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "683d2ff923814e07a60ff17d063867ef"
-                },
-                "m_SlotId": -207644477
-            }
-        },
         {
             "m_OutputSlot": {
                 "m_Node": {
@@ -171,34 +151,6 @@
                     "m_Id": "e16259e85dd1420285a3d4525d00cfe9"
                 },
                 "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "683d2ff923814e07a60ff17d063867ef"
-                },
-                "m_SlotId": 1
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "2e5b11458e984377b97927f0b00c3470"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "683d2ff923814e07a60ff17d063867ef"
-                },
-                "m_SlotId": 1
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "d5282d47384f4ad09483c6e606d3249e"
-                },
-                "m_SlotId": 1
             }
         },
         {
@@ -433,41 +385,6 @@
     "m_ReceiveShadows": false,
     "m_CustomEditorGUI": "",
     "m_SupportVFX": false
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "0b527d8d3cf3407a850ad619ef9b4a2c",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -916.0,
-            "y": 619.0,
-            "width": 133.0,
-            "height": 34.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "ab2cc6628b934c3d802c8795a00c7e18"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "4035cd3e39924ebfa6efdfff75389575"
-    }
 }
 
 {
@@ -898,21 +815,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "4aa74b1f1f184903972e98abffe3b8a4",
-    "m_Id": -207644477,
-    "m_DisplayName": "VelPiscada",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_VelPiscada",
-    "m_StageCapability": 3,
-    "m_Value": 1.5099999904632569,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "4cc90be8407a4602ac319fae9f948997",
     "m_Id": 1,
@@ -1114,55 +1016,6 @@
         "x": 0.0,
         "y": 1.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
-    "m_ObjectId": "683d2ff923814e07a60ff17d063867ef",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "TomadaDeDano",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -773.0000610351563,
-            "y": 535.0,
-            "width": 223.00006103515626,
-            "height": 118.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "f196fabbcaa640fead29b9021d06185f"
-        },
-        {
-            "m_Id": "4aa74b1f1f184903972e98abffe3b8a4"
-        },
-        {
-            "m_Id": "ccf8722a8a9c46799755f272417ca893"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": false,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"dd74d181b59a1054fbc93ca0adc32219\",\n        \"type\": 3\n    }\n}",
-    "m_PropertyGuids": [
-        "867aa929-15dd-49bc-8654-b9d0e532b54c",
-        "6c5bce29-4912-47a1-aa39-23475226469f"
-    ],
-    "m_PropertyIds": [
-        1405803159,
-        -207644477
-    ],
-    "m_Dropdowns": [],
-    "m_DropdownSelectedEntries": []
 }
 
 {
@@ -1450,21 +1303,6 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "ab2cc6628b934c3d802c8795a00c7e18",
-    "m_Id": 0,
-    "m_DisplayName": "VelPiscada",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "b02a0d99c8b84028af21018c1437aaa9",
     "m_Id": 6,
     "m_DisplayName": "B",
@@ -1592,21 +1430,6 @@
     },
     "m_Labels": [],
     "m_Space": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "ccf8722a8a9c46799755f272417ca893",
-    "m_Id": 1,
-    "m_DisplayName": "Out_Vector4",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out_Vector4",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
@@ -2033,21 +1856,6 @@
             "m_Id": "e5ed51663ccd48ef90927a2519dcca05"
         }
     ]
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "f196fabbcaa640fead29b9021d06185f",
-    "m_Id": 1405803159,
-    "m_DisplayName": "InAlpha",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_InAlpha",
-    "m_StageCapability": 3,
-    "m_Value": 1.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {

@@ -9,10 +9,12 @@ public class EstadoIdlePlayer : EstadoAtivoBasePlayer
     {
         base.IniciarEstadoPlayer(player);
         player.SetDadoDashNoAr(false);
-        player.GetRigidbody2D.velocity=new Vector2(0,0);
         player.GetRigidbody2D.sharedMaterial=player.GetMaterialFisicoParado;
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        player.GetRigidbody2D.velocity=new Vector2(0,0);
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.idle);
     }
+
     public override void AtualizarEstado()
     {
         base.AtualizarEstado();
@@ -42,5 +44,10 @@ public class EstadoIdlePlayer : EstadoAtivoBasePlayer
             player.TrocaEstadoPlayer(new EstadoAbaixadaPlayer());
             return;
         }
+    }
+    public override void FinalizarEstado()
+    {
+        base.FinalizarEstado();
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezeRotation;
     }
 }

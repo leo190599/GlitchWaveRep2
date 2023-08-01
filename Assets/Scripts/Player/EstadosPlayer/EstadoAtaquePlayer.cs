@@ -13,6 +13,7 @@ public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
         base.IniciarEstadoPlayer(player);
         player.GetRigidbody2D.velocity=new Vector2(0,0);  
         //player.StartCoroutine(player.TrocaEstadoPlayerCorrotina(new EstadoIdlePlayer(),player.GetAnimator.GetCurrentAnimatorStateInfo(1).length));
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.atacando);
         player.GetRigidbody2D.sharedMaterial=player.GetMaterialFisicoParado;
     }
@@ -57,6 +58,7 @@ public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
     public override void FinalizarEstado()
     {
         base.FinalizarEstado();
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezeRotation;
         player.DesativarEfeitosEspada();
         player.DesativarColisorEspada();
     }

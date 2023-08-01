@@ -9,6 +9,7 @@ public class EstadoAbaixadaPlayer : EstadoAtivoBasePlayer
     {
         base.IniciarEstadoPlayer(player);
         player.GetRigidbody2D.velocity=new Vector2(0,player.GetRigidbody2D.velocity.y);  
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.abaixada);
         player.AtivarColisorRecebimentoDeDanoAbaixada();
     }
@@ -37,6 +38,7 @@ public class EstadoAbaixadaPlayer : EstadoAtivoBasePlayer
     public override void FinalizarEstado()
     {
         base.FinalizarEstado();
+        player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezeRotation;
         if(!manterDetectorDeRecebimentoDeDanoAbaixada)
         {
             player.DesativarColisorRecebimentoDeDanoAbaixada();
