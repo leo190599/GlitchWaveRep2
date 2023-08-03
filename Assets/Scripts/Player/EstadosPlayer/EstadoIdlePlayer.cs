@@ -23,12 +23,7 @@ public class EstadoIdlePlayer : EstadoAtivoBasePlayer
             player.GetRigidbody2D.velocity=new Vector2(player.GetRigidbody2D.velocity.x,player.GetForcaPulo);
             player.TrocaEstadoPlayer(new EstadoPuloPlayer());
             return;
-        }
-        if(Input.GetAxisRaw(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)!=0)
-        {
-            player.TrocaEstadoPlayer(new EstadoAndandoPlayer());
-            return;
-        }
+        }    
         if(Input.GetKeyDown(player.GetMapeadorDeBotoes.GetBotaoAtaque))
         {
             player.TrocaEstadoPlayer(new EstadoAtaquePlayer());
@@ -42,6 +37,11 @@ public class EstadoIdlePlayer : EstadoAtivoBasePlayer
         if(Input.GetKey(player.GetMapeadorDeBotoes.GetBotaoAbaixar))
         {
             player.TrocaEstadoPlayer(new EstadoAbaixadaPlayer());
+            return;
+        }
+        if(Input.GetAxisRaw(player.GetMapeadorDeBotoes.GetEixoDeMovimentoHorizontal)!=0)
+        {
+            player.TrocaEstadoPlayer(new EstadoAndandoPlayer());
             return;
         }
     }

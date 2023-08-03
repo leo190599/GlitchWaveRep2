@@ -38,6 +38,7 @@ public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
     {
         base.EventoAnimacao();
         player.TocarAudio(player.GetAudioAtaqueBase);
+        //Debug.Log("a");
         player.AtivarEfeitosEspada();
         player.AtivarColisorEspada();
     }
