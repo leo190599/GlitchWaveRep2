@@ -104,7 +104,9 @@ public class ScriptPlayer : MonoBehaviour
         abaixadaAtacando=6,
         pulandoAtacando=7,
         levandoDano=8,
-        morte=9
+        morte=9,
+        dashFrente=10,
+        dashTras=11
     }
     void Start()
     {

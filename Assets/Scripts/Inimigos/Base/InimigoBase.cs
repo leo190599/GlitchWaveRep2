@@ -15,7 +15,6 @@ public class InimigoBase : MonoBehaviour
     public virtual void LevarDano(float quantidadeDeDano)
     {
         vida-=quantidadeDeDano;
-        Debug.Log("A");
         if(vida<=0)
         {
             Morrer();
