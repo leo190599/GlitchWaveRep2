@@ -6,6 +6,8 @@ public class ScriptMarteloFitaCassete : MonoBehaviour
 {
     [SerializeField]
     private float dano=5;
+    [SerializeField]
+    private GameObject raizPrefabMartelo;
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D c)
     {
@@ -17,6 +19,6 @@ public class ScriptMarteloFitaCassete : MonoBehaviour
     }
     public void DestruirMartelo()
     {
-        Destroy(gameObject);
+        Destroy(raizPrefabMartelo.gameObject);
     }
 }

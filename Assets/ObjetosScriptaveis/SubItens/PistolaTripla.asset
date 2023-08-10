@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37a715c610fd8a64595e5df496fe8ff4, type: 3}
-  m_Name: Martelo
+  m_Name: PistolaTripla
   m_EditorClassIdentifier: 
-  prefabSubItem: {fileID: 6911665270857887801, guid: ab1f5d732c9832944a822cb441e7aca0, type: 3}
-  custoDeVida: 5
+  prefabSubItem: {fileID: 1519364027171072827, guid: cfb128643c531714f933eb92d328ad71, type: 3}
+  custoDeVida: 4
