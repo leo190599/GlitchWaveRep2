@@ -135,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raizPrefab: {fileID: 1519364027171072827}
   localDeTiro: {fileID: 2490083301520526045}
+  balaPrefab: {fileID: 3851431418469430849, guid: 838db8732e9e09b498a226db7a545440, type: 3}
 --- !u!1 &2490083301520526045
 GameObject:
   m_ObjectHideFlags: 0

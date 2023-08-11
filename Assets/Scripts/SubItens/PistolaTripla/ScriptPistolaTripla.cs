@@ -8,16 +8,18 @@ public class ScriptPistolaTripla : MonoBehaviour
     private GameObject raizPrefab;
     [SerializeField]
     private GameObject localDeTiro;
+    [SerializeField]
+    private GameObject balaPrefab;
     
     public void Atirar()
     {
         if(raizPrefab.transform.localScale.x>0)
         {
-            Debug.Log("a");
+            Instantiate(balaPrefab, localDeTiro.transform.position, Quaternion.Euler(0, 0, 0));
         }
         else
         {
-            Debug.Log("b");
+            Instantiate(balaPrefab, localDeTiro.transform.position, Quaternion.Euler(0, 0, 180));
         }
     }
     public void DestruirPisTola()

@@ -7,7 +7,24 @@ public class ScriptObjetoColetaSubItem : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     private SubItemObjetoScriptavel subItem;
+    [SerializeField]
+    private GameObject centroVisualColeta;
 
+    private void Start()
+    {
+        if(subItem != null)
+        {
+            if (subItem.GetPrefabColetavel != null)
+            {
+                GameObject visualSubItem = Instantiate(subItem.GetPrefabColetavel, centroVisualColeta.transform);
+                visualSubItem.transform.parent = centroVisualColeta.transform;
+            }
+            else
+            {
+                Debug.LogWarning("O subItem nao possui prefab visual");
+            }
+        }
+    }
     void OnTriggerEnter2D(Collider2D c)
     {
         if(c.tag=="Player")
