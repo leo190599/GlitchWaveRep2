@@ -8,6 +8,7 @@ public class ScriptRaizPrefabRobo : MonoBehaviour
     private BoxCollider2D colisor;
     [SerializeField]
     private ScriptRobo robo;
+
     // Start is called before the first frame update
     private void Awake()
     {
