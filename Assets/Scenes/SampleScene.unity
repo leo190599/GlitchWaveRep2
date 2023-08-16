@@ -62363,6 +62363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrefabInimigoRobo
       objectReference: {fileID: 0}
+    - target: {fileID: 1154219199930210032, guid: 0f7ab4c7b2ed8c2448ce82e9910cdd2e, type: 3}
+      propertyPath: vidaMaxima
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4992496253517450990, guid: 0f7ab4c7b2ed8c2448ce82e9910cdd2e, type: 3}
       propertyPath: InitialModule.startLifetime.minScalar
       value: 0.75
