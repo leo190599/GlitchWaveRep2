@@ -29,7 +29,8 @@ public class ScriptGatinho : MonoBehaviour
     private Animator anim;
     [SerializeField]
     private CapsuleCollider2D col;
-
+    [SerializeField]
+    private InformacoesPlayer2 informacoesPlayer2;
     [SerializeField]
     private ControladorDeCena controladorDeCena;
 
@@ -70,6 +71,7 @@ public class ScriptGatinho : MonoBehaviour
                     malha.SetActive(true);
                     mira.SetActive(true);
                     estadoGatinho=EstadoGatinho.mirando;
+                    informacoesPlayer2.AtivarGatinho();
                 }
             }
             else if(estadoGatinho==EstadoGatinho.mirando)
@@ -138,5 +140,6 @@ public class ScriptGatinho : MonoBehaviour
             tr.gameObject.SetActive(false);
             malha.SetActive(false);
             col.enabled=false;
+            informacoesPlayer2.DesativarGatinho();
         }
 }

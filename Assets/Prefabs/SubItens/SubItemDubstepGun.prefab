@@ -62,6 +62,8 @@ GameObject:
   - component: {fileID: 8747317048821789380}
   - component: {fileID: 4746399877522148604}
   - component: {fileID: 6459897363364878351}
+  - component: {fileID: 2432305116214606596}
+  - component: {fileID: 7114048545136060690}
   m_Layer: 10
   m_Name: Raio
   m_TagString: Untagged
@@ -134,6 +136,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &2432305116214606596
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399879508757671200}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 727220f26943f8d4d8e3e59d4a53c971, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7114048545136060690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399879508757671200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ff0cd070597f44bb9bd73f18e4d3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texturas:
+  - {fileID: 2800000, guid: f30f371a376af094c9ea36d332499e54, type: 3}
+  - {fileID: 2800000, guid: c23d5753db850be49b576fadd6bc3614, type: 3}
+  - {fileID: 2800000, guid: b9faab4ff92d3c84ab2092ab43de9cff, type: 3}
+  - {fileID: 2800000, guid: 560dadd73d784444fad0cf38978aa7c2, type: 3}
+  - {fileID: 2800000, guid: b9faab4ff92d3c84ab2092ab43de9cff, type: 3}
+  - {fileID: 2800000, guid: c23d5753db850be49b576fadd6bc3614, type: 3}
+  - {fileID: 2800000, guid: f30f371a376af094c9ea36d332499e54, type: 3}
 --- !u!1 &2720258659069309353
 GameObject:
   m_ObjectHideFlags: 0
