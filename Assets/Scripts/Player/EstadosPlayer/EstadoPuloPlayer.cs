@@ -16,6 +16,10 @@ public class EstadoPuloPlayer : EstadoNoArBasePlayer
         {
             player.TrocaEstadoPlayer(new EstadoPuloAtaquePlayer());
         }
+        if(Input.GetKeyDown(player.GetMapeadorDeBotoes.GetBotaoSubItem))
+        {
+            player.TrocaEstadoPlayer(new EstadoPuloUsandoSubItemPlayer());
+        }
     }
     public override void AtualizarEstadoFixado()
     {

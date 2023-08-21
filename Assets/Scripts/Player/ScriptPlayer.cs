@@ -106,7 +106,8 @@ public class ScriptPlayer : MonoBehaviour
         levandoDano=8,
         morte=9,
         dashFrente=10,
-        dashTras=11
+        dashTras=11,
+        puloUsoSubItem=12
     }
     void Start()
     {
