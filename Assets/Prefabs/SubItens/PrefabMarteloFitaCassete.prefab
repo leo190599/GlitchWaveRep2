@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 6911665271811799846}
   m_Layer: 10
   m_Name: RaizMartelo
-  m_TagString: Untagged
+  m_TagString: ColiderFantasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

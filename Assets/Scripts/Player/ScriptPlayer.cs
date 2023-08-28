@@ -23,8 +23,8 @@ public class ScriptPlayer : MonoBehaviour
     [SerializeField]
     private float tempoDeInvencibilidadeAoTomarDano=1;
     [SerializeField]
-    private float danoRecebidoGlitch=.5f;
-    [SerializeField]
+   // private float danoRecebidoGlitch=.5f;
+    //[SerializeField]
     private float tempoDash=1;
     [SerializeField]
     private float velDash=5;
@@ -120,6 +120,7 @@ public class ScriptPlayer : MonoBehaviour
         //teste
         rotacaoAlvo=meshPersonagem.transform.eulerAngles;
         //Application.targetFrameRate=1;
+        informacoesPlayer.SetSubItemObjetoScriptavel(null);
         //teste
         trailDash.gameObject.SetActive(false);
 
@@ -180,14 +181,14 @@ public class ScriptPlayer : MonoBehaviour
         {
             if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoPause))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
         else if(controldadorDeCenaPlayer.getEstadoCena==ControladorDeCena.TipoEstadoCena.venceu)
         {
             if(Input.GetKeyDown(mapeadorDeBotoes.GetBotaoPause))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
         //Debug.Log(estadoPlayerAtual);
@@ -324,7 +325,7 @@ public class ScriptPlayer : MonoBehaviour
 
     public void AtivarGlitch()
     {
-        if(informacoesPlayer.GetVidaAtual>danoRecebidoGlitch)
+        if(informacoesPlayer.GetVidaAtual>informacoesPlayer.GetDanoGlitchPlayer)
         {
             glitchAtivo=true;
             mensageiroPlayerShaderPersonagem.setEfeitoGlitch(true);
@@ -348,8 +349,8 @@ public class ScriptPlayer : MonoBehaviour
     {
         while(true)
         {
-            informacoesPlayer.ReceberDano(danoRecebidoGlitch);
-            if(informacoesPlayer.GetVidaAtual<=danoRecebidoGlitch)
+            informacoesPlayer.ReceberDano(informacoesPlayer.GetDanoGlitchPlayer);
+            if(informacoesPlayer.GetVidaAtual<=informacoesPlayer.GetDanoGlitchPlayer)
             {
                 glitchAtivo=false;
                 mensageiroPlayerShaderPersonagem.setEfeitoGlitch(false);

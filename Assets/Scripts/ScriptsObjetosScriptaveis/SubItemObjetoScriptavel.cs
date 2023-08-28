@@ -12,8 +12,11 @@ public class SubItemObjetoScriptavel : ScriptableObject
     private float custoDeVida=1;
     [SerializeField]
     private GameObject prefabColetavel;
+    [SerializeField]
+    private Sprite simboloSubItem;
 
     public float GetCustoDeVida=>custoDeVida;
     public GameObject GetPrefabSubItem=>prefabSubItem;
     public GameObject GetPrefabColetavel => prefabColetavel;
+    public Sprite GetSimboloSubItem=> simboloSubItem;
 }

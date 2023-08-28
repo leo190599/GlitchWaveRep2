@@ -15,3 +15,4 @@ MonoBehaviour:
   prefabSubItem: {fileID: 680510596424818805, guid: 932ae076185756d42a825eab5101bc9b, type: 3}
   custoDeVida: 60
   prefabColetavel: {fileID: 1133130789589164697, guid: 1a0606520fb39a64490aae1bd7ec3e6d, type: 3}
+  simboloSubItem: {fileID: 21300000, guid: bda8822c135493a4697ab33d3ecf9a11, type: 3}

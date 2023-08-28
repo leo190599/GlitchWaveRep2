@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControladorDeMenus : MonoBehaviour
 {
@@ -58,6 +59,33 @@ public class ControladorDeMenus : MonoBehaviour
         controladorDeCena.EventosEstadoVenceu-=AtivarMenuVenceu;
     }
     
+    public void TrocarEstadoCenaJogando()
+    {
+        controladorDeCena.TrocarEstadoAtual(ControladorDeCena.TipoEstadoCena.jogando);
+    }
+    public void TrocarEstadoCenaPausa()
+    {
+        controladorDeCena.TrocarEstadoAtual(ControladorDeCena.TipoEstadoCena.pausado);
+    }
+    public void TrocarEstadoCenaVenceu()
+    {
+        controladorDeCena.TrocarEstadoAtual(ControladorDeCena.TipoEstadoCena.venceu);
+    }
+    public void TrocarEstadoMorreu()
+    {
+        controladorDeCena.TrocarEstadoAtual(ControladorDeCena.TipoEstadoCena.morreu);
+    }
+
+    public void ReiniciarCena()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void IrParaCena(string novaCena)
+    {
+        SceneManager.LoadScene(novaCena);
+    }
+
     public void DesativarMenuAtual()
     {
         if(menuAtivo!=null)

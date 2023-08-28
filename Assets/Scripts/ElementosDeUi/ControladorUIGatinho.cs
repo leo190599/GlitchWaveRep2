@@ -8,6 +8,8 @@ public class ControladorUIGatinho : MonoBehaviour
     [SerializeField]
     private InformacoesPlayer2 informacoesGatinho;
     [SerializeField]
+    private Image raizImagemGatinho;
+    [SerializeField]
     private Image imagemGatinho;
     [SerializeField]
     private Color corImagemAtivada=Color.white;
@@ -16,7 +18,7 @@ public class ControladorUIGatinho : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        imagemGatinho.gameObject.SetActive(false);
+        raizImagemGatinho.gameObject.SetActive(false);
     }
     private void OnEnable()
     {
@@ -32,7 +34,7 @@ public class ControladorUIGatinho : MonoBehaviour
     {
         if(!imagemGatinho.gameObject.activeInHierarchy)
         {
-            imagemGatinho.gameObject.SetActive(true);
+            raizImagemGatinho.gameObject.SetActive(true);
         }
         imagemGatinho.color = corImagemAtivada;
     }

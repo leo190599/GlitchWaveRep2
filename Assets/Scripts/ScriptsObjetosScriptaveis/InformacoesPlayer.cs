@@ -15,9 +15,12 @@ public class InformacoesPlayer : ScriptableObject
 
     [SerializeField]
     private float danoAtaqueBasico=10;
+    [SerializeField]
+    private float danoGlitchPlayer = 20;
     public UnityAction EventosLevarDano;
     public UnityAction EventosCura;
     public UnityAction EventosMorte;
+    public UnityAction EventosTrocaSubItem;
 
     public float GetPorcentagemDeVida=>Mathf.Clamp(vidaAtual/vidaMaxima,0f,100f);
     public float GetVidaAtual=>Mathf.Clamp(vidaAtual,0,vidaMaxima);
@@ -55,6 +58,10 @@ public class InformacoesPlayer : ScriptableObject
     public void SetSubItemObjetoScriptavel(SubItemObjetoScriptavel subItemObjetoScriptavel)
     {
         this.subItemObjetoScriptavel=subItemObjetoScriptavel;
+        if(EventosTrocaSubItem!=null)
+        {
+            EventosTrocaSubItem.Invoke();
+        }
     }
 
     public SubItemObjetoScriptavel GetSubItemObjetoScriptavel=>subItemObjetoScriptavel;
@@ -69,4 +76,5 @@ public class InformacoesPlayer : ScriptableObject
     }
 
     public float GetDanoAtaqueBasico=>danoAtaqueBasico;
+    public float GetDanoGlitchPlayer=>danoGlitchPlayer;
 }
