@@ -125,6 +125,7 @@ public class ScriptPlayer : MonoBehaviour
         trailDash.gameObject.SetActive(false);
 
         DesativarColisorEspada();
+        informacoesPlayer.InvocarEventosDesativacaoGlitch();
 
         estadoPlayerAtual=new EstadoIdlePlayer();
         estadoPlayerAtual.IniciarEstadoPlayer(this);
@@ -328,6 +329,7 @@ public class ScriptPlayer : MonoBehaviour
         if(informacoesPlayer.GetVidaAtual>informacoesPlayer.GetDanoGlitchPlayer)
         {
             glitchAtivo=true;
+            informacoesPlayer.InvocarEventosAtivacaoGlitch();
             mensageiroPlayerShaderPersonagem.setEfeitoGlitch(true);
             corrotinaReceberDanoGlitch=ReceberDanoGlitch();
             StartCoroutine(corrotinaReceberDanoGlitch);
@@ -336,6 +338,7 @@ public class ScriptPlayer : MonoBehaviour
     public void DesativarGlitch()
     {
         glitchAtivo=false;
+        informacoesPlayer.InvocarEventosDesativacaoGlitch();
         mensageiroPlayerShaderPersonagem.setEfeitoGlitch(false);
         StopCoroutine(corrotinaReceberDanoGlitch);
     }
@@ -352,6 +355,7 @@ public class ScriptPlayer : MonoBehaviour
             informacoesPlayer.ReceberDano(informacoesPlayer.GetDanoGlitchPlayer);
             if(informacoesPlayer.GetVidaAtual<=informacoesPlayer.GetDanoGlitchPlayer)
             {
+                informacoesPlayer.InvocarEventosDesativacaoGlitch();
                 glitchAtivo=false;
                 mensageiroPlayerShaderPersonagem.setEfeitoGlitch(false);
                 StopCoroutine(corrotinaReceberDanoGlitch);

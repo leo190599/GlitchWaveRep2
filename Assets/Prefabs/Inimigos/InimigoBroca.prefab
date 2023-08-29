@@ -51,9 +51,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 100
-  vidaMaxima: 15
-  dano: 10
-  vel: 0
+  vidaMaxima: 25
+  dano: 30
+  vel: 25
   particulasMorte: {fileID: 4571526622080158357, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
   controladorShaderInimigoBroca: {fileID: 971603124071435065}
 --- !u!50 &5830530258597968

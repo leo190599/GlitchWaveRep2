@@ -22,6 +22,11 @@ public class InformacoesPlayer : ScriptableObject
     public UnityAction EventosMorte;
     public UnityAction EventosTrocaSubItem;
 
+    private bool glitchAtivo = false;
+
+    public UnityAction EventosAtivacaoGlitch;
+    public UnityAction EventosDesativacaoGlitch;
+
     public float GetPorcentagemDeVida=>Mathf.Clamp(vidaAtual/vidaMaxima,0f,100f);
     public float GetVidaAtual=>Mathf.Clamp(vidaAtual,0,vidaMaxima);
     public float GetVidaMaxima=>vidaMaxima;
@@ -75,6 +80,25 @@ public class InformacoesPlayer : ScriptableObject
         return null;
     }
 
+    public void InvocarEventosAtivacaoGlitch()
+    {
+        glitchAtivo = true;
+        if(EventosAtivacaoGlitch!=null)
+        {
+            EventosAtivacaoGlitch.Invoke();
+        }
+    }
+
+    public void InvocarEventosDesativacaoGlitch()
+    {
+        glitchAtivo = false;
+        if(EventosDesativacaoGlitch!=null)
+        {
+            EventosDesativacaoGlitch.Invoke();
+        }
+    }
+
     public float GetDanoAtaqueBasico=>danoAtaqueBasico;
     public float GetDanoGlitchPlayer=>danoGlitchPlayer;
+    public bool GetGlitchAtivo => glitchAtivo;
 }
