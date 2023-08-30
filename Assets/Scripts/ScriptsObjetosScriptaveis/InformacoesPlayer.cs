@@ -17,6 +17,8 @@ public class InformacoesPlayer : ScriptableObject
     private float danoAtaqueBasico=10;
     [SerializeField]
     private float danoGlitchPlayer = 20;
+    [SerializeField]
+    private float intervaloTempoRecebimentoDeDanoGlitch = .5f;
     public UnityAction EventosLevarDano;
     public UnityAction EventosCura;
     public UnityAction EventosMorte;
@@ -98,6 +100,7 @@ public class InformacoesPlayer : ScriptableObject
         }
     }
 
+    public float GetIntervaloTempoRecebimentoDeDanoGlitch => intervaloTempoRecebimentoDeDanoGlitch > 0 ? intervaloTempoRecebimentoDeDanoGlitch : 1;
     public float GetDanoAtaqueBasico=>danoAtaqueBasico;
     public float GetDanoGlitchPlayer=>danoGlitchPlayer;
     public bool GetGlitchAtivo => glitchAtivo;

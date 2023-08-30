@@ -5,6 +5,8 @@ using UnityEngine;
 public class SessaoNivel : MonoBehaviour
 {
     [SerializeField]
+    private Vector2 areaDaCameraPrevistaNoLocal;
+    [SerializeField]
     private string tagAColidir;
     [SerializeField]
     private GameObject paiDaSubCena;
@@ -33,6 +35,11 @@ public class SessaoNivel : MonoBehaviour
         {
             paiDaSubCena.SetActive(false);
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(transform.position, new Vector3(areaDaCameraPrevistaNoLocal.x,areaDaCameraPrevistaNoLocal.y,1));
     }
 
 }

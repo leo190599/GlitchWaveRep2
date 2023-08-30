@@ -45,7 +45,7 @@ GameObject:
   m_Layer: 0
   m_Name: SessaoNivel
   m_TagString: ColiderFantasma
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42456bd8755352345ab7a65da91164b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areaDaCameraPrevistaNoLocal: {x: 0, y: 0}
   tagAColidir: Player
   paiDaSubCena: {fileID: 6620283968462764076}
   objetosASairemDaSubCenaAoIniciar: []

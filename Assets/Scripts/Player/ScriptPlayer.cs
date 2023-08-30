@@ -360,7 +360,7 @@ public class ScriptPlayer : MonoBehaviour
                 mensageiroPlayerShaderPersonagem.setEfeitoGlitch(false);
                 StopCoroutine(corrotinaReceberDanoGlitch);
             }
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(informacoesPlayer.GetIntervaloTempoRecebimentoDeDanoGlitch);
         }
     }
     public void Curar(float quantidadeDeCura)

@@ -7,6 +7,8 @@ public class ScriptInimigoBroca : InimigoBase
     [SerializeField]
     private float vel=1;
     [SerializeField]
+    private float tempoParaMorte = 10;
+    [SerializeField]
     public GameObject particulasMorte;
     Rigidbody2D rb;
     [SerializeField]
@@ -21,6 +23,7 @@ public class ScriptInimigoBroca : InimigoBase
             Debug.LogError("Coloque o componente em uma broca que possua um Rigdbody2d");
 
         }
+        Destroy(gameObject, tempoParaMorte);
     }
 
     public override void CausarDano(ScriptPlayer player)
