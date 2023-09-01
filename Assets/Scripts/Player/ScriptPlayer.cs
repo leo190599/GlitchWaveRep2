@@ -31,6 +31,12 @@ public class ScriptPlayer : MonoBehaviour
     [Header("Audios")]
     [SerializeField]
     private AudioClip audioAtaqueBase;
+    [SerializeField]
+    private AudioClip audioDash;
+    [SerializeField]
+    private AudioClip audioDano;
+    [SerializeField]
+    private AudioClip audioMorte;
 
     [Header("Parametros Debug")]
     [SerializeField]
@@ -300,6 +306,7 @@ public class ScriptPlayer : MonoBehaviour
             else
             {
                 anim.updateMode=AnimatorUpdateMode.UnscaledTime;
+                TocarAudio(audioMorte);
                 TrocarAnimPlayer(EstadosAnimacao.morte);
             }
         }
@@ -469,4 +476,7 @@ public class ScriptPlayer : MonoBehaviour
     public bool GetDashDadoNoAr=>dashDadoNoAr;
     //Getters audios
     public AudioClip GetAudioAtaqueBase=>audioAtaqueBase;
+    public AudioClip GetAudioDash => audioDash;
+    public AudioClip GetAudioDano => audioDano;
+    public AudioClip GetAudioMorte => audioMorte;
 }

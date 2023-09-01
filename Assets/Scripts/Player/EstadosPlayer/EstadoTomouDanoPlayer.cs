@@ -9,6 +9,7 @@ public class EstadoTomouDanoPlayer : EstadoBasePlayer
     {
         base.IniciarEstadoPlayer(player);
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.levandoDano);
+        player.TocarAudio(player.GetAudioDano);
         if(player.GetOlhandoParaDireita)
         {
             player.GetRigidbody2D.velocity=player.GetForcaAplicadaAoEntrarNoEstadoDeTomarDano;

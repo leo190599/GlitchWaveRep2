@@ -12,6 +12,7 @@ public class EstadoDashPlayer : EstadoBasePlayer
     {
         base.IniciarEstadoPlayer(player);
         player.GetTrailDash.gameObject.SetActive(true);
+        player.TocarAudio(player.GetAudioDash);
         //player.GetRigidbody2D.isKinematic=true;
         player.GetRigidbody2D.sharedMaterial=player.GetMaterialFisicoAndando;
         if(player.GetDashDireita)

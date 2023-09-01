@@ -12,6 +12,7 @@ public class SessaoNivel : MonoBehaviour
     private GameObject paiDaSubCena;
     [SerializeField]
     private GameObject[] objetosASairemDaSubCenaAoIniciar;
+    private bool ativadoPrimeiraVez=false;
 
     private void Start()
     {
@@ -23,9 +24,13 @@ public class SessaoNivel : MonoBehaviour
         if (c.tag == tagAColidir)
         {
             paiDaSubCena.SetActive(true);
-            foreach(GameObject g in objetosASairemDaSubCenaAoIniciar)
+            if (!ativadoPrimeiraVez)
             {
-                g.transform.parent = null;
+                foreach (GameObject g in objetosASairemDaSubCenaAoIniciar)
+                {
+                    g.transform.parent = null;
+                }
+                ativadoPrimeiraVez = true;
             }
         }
     }

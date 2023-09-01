@@ -10,10 +10,13 @@ public class InimigoBase : MonoBehaviour
     protected float vidaMaxima=100;
     [SerializeField]
     protected float dano=10;
+    [SerializeField]
+    protected AudioSource audioSourceSomHit;
     // Start is called before the first frame update
 
     public virtual void LevarDano(float quantidadeDeDano)
     {
+        audioSourceSomHit.Play();
         vida-=quantidadeDeDano;
         if(vida<=0)
         {

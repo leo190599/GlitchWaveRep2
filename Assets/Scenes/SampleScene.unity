@@ -63875,6 +63875,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 145304706}
     - target: {fileID: 5224938833915711912, guid: 27c955f09d2c6914496df3d11a5736e3, type: 3}
+      propertyPath: audioDano
+      value: 
+      objectReference: {fileID: 8300000, guid: 2e03f141faa9a6141a5fb86314d09979, type: 3}
+    - target: {fileID: 5224938833915711912, guid: 27c955f09d2c6914496df3d11a5736e3, type: 3}
+      propertyPath: audioDash
+      value: 
+      objectReference: {fileID: 8300000, guid: 2395f2160b72f924ca736c79a3f538ea, type: 3}
+    - target: {fileID: 5224938833915711912, guid: 27c955f09d2c6914496df3d11a5736e3, type: 3}
+      propertyPath: audioMorte
+      value: 
+      objectReference: {fileID: 8300000, guid: e256ac67bcb0d3d43bcf4aa51da359ea, type: 3}
+    - target: {fileID: 5224938833915711912, guid: 27c955f09d2c6914496df3d11a5736e3, type: 3}
       propertyPath: colisorEspada
       value: 
       objectReference: {fileID: 145304704}
