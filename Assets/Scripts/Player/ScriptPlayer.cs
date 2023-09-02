@@ -305,9 +305,12 @@ public class ScriptPlayer : MonoBehaviour
             }
             else
             {
+                //TrocaEstadoPlayer(new EstadoMortePlayer());
+                /*
                 anim.updateMode=AnimatorUpdateMode.UnscaledTime;
                 TocarAudio(audioMorte);
                 TrocarAnimPlayer(EstadosAnimacao.morte);
+                */
             }
         }
     }
@@ -380,6 +383,7 @@ public class ScriptPlayer : MonoBehaviour
         rb.sharedMaterial=materialFisicoParado;
         rb.velocity=new Vector2(0,rb.velocity.y);
         controldadorDeCenaPlayer.TrocarEstadoAtual(ControladorDeCena.TipoEstadoCena.morreu);
+        TrocaEstadoPlayer(new EstadoMortePlayer());
     }
 
     public void TrocaEstadoPlayer(EstadoBasePlayer novoEstado)

@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2664867201950304898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158352, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158357, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: m_Name
+      value: ParticulasVida Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: ShapeModule.type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: ShapeModule.angle
+      value: 29.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: VelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: EmissionModule.m_BurstCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: ExternalForcesModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571526622080158359, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 770a8b2a919adca48983660dfacb5599, type: 3}
