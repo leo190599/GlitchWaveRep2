@@ -28,7 +28,7 @@ public class ControladorBarraVidaPersonagem : MonoBehaviour
     public void AlterarProgresso()
     {
         controladorBarraDeProgresso.AlterarProgresso(informacoesPlayer.GetPorcentagemDeVida);
-        textoVidaPlayer.text=informacoesPlayer.GetVidaAtual.ToString()+"/"+informacoesPlayer.GetVidaMaxima;
+        textoVidaPlayer.text="("+informacoesPlayer.GetVidaAtual.ToString()+"%)";
     }
     void OnEnable()
     {

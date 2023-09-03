@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: 98ac803a3fd8d2f4785b2d225df12785
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Coisas Separadas2_5
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 829
+        width: 670
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa9940ad5f6d7740997af7c38cc7ab6
+      internalID: 629480080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas2_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 583
+        width: 318
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7605eb5ccbce747935d6b4acc42a41
+      internalID: 541706568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas2_22
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 551
+        width: 670
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac18335b44452e14c90262b676ed99c2
+      internalID: 824615629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas2_25
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 506
+        width: 472
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4304d30305a8104ca63001622ad9014
+      internalID: 1452444244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas2_46
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 318
+        width: 849
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c771bdfee68e62047be3e9de33c33565
+      internalID: -617248486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas2_47
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 314
+        width: 840
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2086cb0904ee88445912f0477a00ec48
+      internalID: 558068604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas2_67
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 211
+        width: 815
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd3a2bf1591bd749a3c0239ab7e8afa
+      internalID: -708810538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas2_93
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 135
+        width: 815
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5045d59998441f743a0f2d442eb286ed
+      internalID: 387793133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Coisas Separadas2_0: -1018395939
+      Coisas Separadas2_1: -1523055663
+      Coisas Separadas2_10: -1600044729
+      Coisas Separadas2_11: -905907174
+      Coisas Separadas2_12: 63844756
+      Coisas Separadas2_13: -1713684160
+      Coisas Separadas2_14: -1017539428
+      Coisas Separadas2_15: 541706568
+      Coisas Separadas2_16: 746016308
+      Coisas Separadas2_17: -2034796218
+      Coisas Separadas2_18: -2001442920
+      Coisas Separadas2_19: -238769103
+      Coisas Separadas2_2: 78990834
+      Coisas Separadas2_20: -1705214871
+      Coisas Separadas2_21: -597140619
+      Coisas Separadas2_22: 824615629
+      Coisas Separadas2_23: -1934235261
+      Coisas Separadas2_24: 829990047
+      Coisas Separadas2_25: 1452444244
+      Coisas Separadas2_26: -928594296
+      Coisas Separadas2_27: 200380762
+      Coisas Separadas2_28: 944907290
+      Coisas Separadas2_29: -359534772
+      Coisas Separadas2_3: -746861836
+      Coisas Separadas2_30: -989080098
+      Coisas Separadas2_31: -1528675517
+      Coisas Separadas2_32: -1493464699
+      Coisas Separadas2_33: 72010428
+      Coisas Separadas2_34: -361604822
+      Coisas Separadas2_35: 1040587935
+      Coisas Separadas2_36: 2022074315
+      Coisas Separadas2_37: -365765940
+      Coisas Separadas2_38: -1783662152
+      Coisas Separadas2_39: -995621678
+      Coisas Separadas2_4: -598261444
+      Coisas Separadas2_40: 1965249410
+      Coisas Separadas2_41: -233517766
+      Coisas Separadas2_42: 169200108
+      Coisas Separadas2_43: -955670377
+      Coisas Separadas2_44: 1479112987
+      Coisas Separadas2_45: -1072501435
+      Coisas Separadas2_46: -617248486
+      Coisas Separadas2_47: 558068604
+      Coisas Separadas2_48: 2021913828
+      Coisas Separadas2_49: -969219924
+      Coisas Separadas2_5: 629480080
+      Coisas Separadas2_50: -379508000
+      Coisas Separadas2_51: -1331767477
+      Coisas Separadas2_52: -1235885037
+      Coisas Separadas2_53: 427206748
+      Coisas Separadas2_54: 1679231206
+      Coisas Separadas2_55: -1226470099
+      Coisas Separadas2_56: -1040752280
+      Coisas Separadas2_57: -1621382797
+      Coisas Separadas2_58: 36777834
+      Coisas Separadas2_59: -1881429745
+      Coisas Separadas2_6: -380284065
+      Coisas Separadas2_60: 1264811749
+      Coisas Separadas2_61: 1410473720
+      Coisas Separadas2_62: 1897514912
+      Coisas Separadas2_63: 1997715361
+      Coisas Separadas2_64: -913349013
+      Coisas Separadas2_65: -1975065582
+      Coisas Separadas2_66: -346910245
+      Coisas Separadas2_67: -708810538
+      Coisas Separadas2_68: -1122176484
+      Coisas Separadas2_69: 578940378
+      Coisas Separadas2_7: 961874234
+      Coisas Separadas2_70: 841781106
+      Coisas Separadas2_71: 314133396
+      Coisas Separadas2_72: 1081449004
+      Coisas Separadas2_73: 757363617
+      Coisas Separadas2_74: 1107682275
+      Coisas Separadas2_75: -1661583210
+      Coisas Separadas2_76: -782694409
+      Coisas Separadas2_77: 648302780
+      Coisas Separadas2_78: 719030387
+      Coisas Separadas2_79: 965956126
+      Coisas Separadas2_8: 810110937
+      Coisas Separadas2_80: 1860798946
+      Coisas Separadas2_81: -2121787798
+      Coisas Separadas2_82: -1443043772
+      Coisas Separadas2_83: -471947266
+      Coisas Separadas2_84: 97342674
+      Coisas Separadas2_85: 83434512
+      Coisas Separadas2_86: 697930781
+      Coisas Separadas2_87: -545152701
+      Coisas Separadas2_88: 1634821308
+      Coisas Separadas2_89: -1983113200
+      Coisas Separadas2_9: -574339864
+      Coisas Separadas2_90: 1413227004
+      Coisas Separadas2_91: -87874967
+      Coisas Separadas2_92: -97014484
+      Coisas Separadas2_93: 387793133
+      Coisas Separadas2_94: 1456958709
+      Coisas Separadas2_95: 1895543031
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

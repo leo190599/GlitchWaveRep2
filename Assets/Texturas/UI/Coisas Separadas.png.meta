@@ -1,0 +1,1860 @@
+fileFormatVersion: 2
+guid: 8935906adad8ffc47b1d29f8d89cce3f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Coisas Separadas_0
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 954
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0489d93ebe3854ea91685cbad8a6c0
+      internalID: 1380822275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_1
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 954
+        width: 33
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df76bbf8a97f8040af4468e464f0254
+      internalID: 1649579263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_2
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 954
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5307cff71f41062419c16231db3f5bda
+      internalID: 1441885984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_3
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 953
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4923d02501003649955efe110392776
+      internalID: 1654535968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_4
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 954
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aae4cd7817b79b45b93e6606d0b7ce4
+      internalID: -1185688329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_5
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 829
+        width: 670
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63533c2384e64ef46a885889212b6bb5
+      internalID: 1029180394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 831
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222b396041e10c4459f72d71cc964cb8
+      internalID: -289834965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_7
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 831
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7473fcee950c0b447b845a2116851e9d
+      internalID: -982053144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_8
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 831
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa26d38b97eb10a4c9e0f5ce1c46abe3
+      internalID: -1792475977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_9
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 831
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7264dd1a63935e04097bda14e1fb0505
+      internalID: 2102859835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_10
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 831
+        width: 17
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3fc182cd82b454ba66e6e2a75dd000
+      internalID: -167224107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_11
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 852
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19077f49aa3b90f4a92387b8ee81c9c4
+      internalID: -1919411277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_12
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 852
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def911cf3ddd30d49acc0a6f07f79c30
+      internalID: 1876146703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_13
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 830
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fde78ae08fbe2c4e92c9aede84392a4
+      internalID: -1358216554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_14
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 830
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb06e13ab9ef814aabba85e22753952
+      internalID: 340120031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 583
+        width: 318
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec998c15f2d19c84996e73c354049dff
+      internalID: 1318241961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_16
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 654
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f46ec3aa946554e9332acb014f8b38
+      internalID: -1774405417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_17
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 654
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c9e9e2e347a3740a510a7b1deb0f9f
+      internalID: 1682550140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_18
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 653
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a7ad4eb0b6ccc47b7fae8dbb957397
+      internalID: -92857870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_19
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 654
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21121f01332b3048a9f380f57a7a55a
+      internalID: 1753043973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_20
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 670
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068925927ad346d4995904b8f0804b31
+      internalID: -2123241579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_21
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 670
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0916e52be25816147a2ef4e3936fb7f0
+      internalID: -1450898572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_22
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 551
+        width: 670
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00072e5eb3235a14a82ef886fd36f058
+      internalID: -466729682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_23
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 654
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8cfa9e33d69b7c47b3df2760f60c918
+      internalID: -246034101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_24
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 654
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e910914c9d87d374291a85f6c12b5e59
+      internalID: 1607382225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_25
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 506
+        width: 472
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb79ae7478aac5a429db427566483fe2
+      internalID: 298754904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_26
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d34c09c37c806445aa1e487f594f275
+      internalID: -324709531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_27
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9e2af847c472c4c93db94911e5c993
+      internalID: 208313284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_28
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c834146e7450554995ec2e026a969b0
+      internalID: 878312183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ebfd64cd3e475479634bdf1b2eb647
+      internalID: -962867045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_30
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbbf2a292986c847b88c9313f4fce78
+      internalID: 1597112515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_31
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c223149a8a6d347b1ef721c859a2cc
+      internalID: 1963676190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_32
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1349b435d43fe5a4b94699d7710029c1
+      internalID: -248660488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_33
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2562a903316824d987ec323154084f
+      internalID: 2045260831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_34
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704bcf4f04072764fb8c11ed15966c3c
+      internalID: -336811983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_35
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2999919c6625c5f409bdefb6ae3a942b
+      internalID: 1019160950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_36
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0938669546c5d274d9cd14e3dfaef2ae
+      internalID: 84186264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_37
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1712d52c3a5529444aa2b1c1c786031b
+      internalID: 1974752070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_38
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea48cfe96f289f479f34680e7a082d5
+      internalID: -1514849566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_39
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc65622f1aab7b4f93a1c44557c7dcc
+      internalID: -1795089644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_40
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847588746f5052b4991df2d78284fd05
+      internalID: 39554171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_41
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2561eed2d2e962d4ba76b7bd07e2a8f6
+      internalID: 511944128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_42
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a52dcd5f2538c44a2850c22bb71673
+      internalID: 461974106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_43
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b795b9be5614e459e4fccfa486cf27
+      internalID: -345333163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_44
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b643e1cafb5b5154f9da24fbfea5cbd0
+      internalID: -2145999828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_45
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 448
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303fdbc6943d4e848bb7d0705eb7e061
+      internalID: 358431795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_46
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 318
+        width: 849
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980789b5da8d73a47bdc240a63d89426
+      internalID: 2074233013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_47
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 314
+        width: 840
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b098d4e7641f8bc4baf5cae9c111637b
+      internalID: 1173925146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_67
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 211
+        width: 815
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249c75340ea1adf4ab96d6157875c031
+      internalID: -637567569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_68
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 95
+        width: 382
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332ed6bc7e989e04f8c2301fc8377c18
+      internalID: 1609995199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_69
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 201
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be36ea86c63508a4eab63f6e1a27e484
+      internalID: 1733812820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_70
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 120
+        width: 51
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3057c3b6d71b6544b9597b3fbb2cea63
+      internalID: -1155937842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_71
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 82
+        width: 150
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d28e75a2b91bd41b88439ea169c2b4
+      internalID: -428841458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_72
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 211
+        width: 75
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d8eafdfb875d648897f5d04528cef3
+      internalID: -618178238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_73
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 173
+        width: 82
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b057f98dc11968943938e9e748f80c27
+      internalID: 965640976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_74
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cbf0813df148e4aaf7dcedd634b6e1
+      internalID: 1473730482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_75
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2279bdcd616e3c44b8cf1cc5b04b23a
+      internalID: 1467729696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_76
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82603f79d1d7e3b4a9d40edaf156c8c9
+      internalID: 896664592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_77
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa44ff2c9f948f4ea43eae6fe04c408
+      internalID: -1283515063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_78
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccbcef8818f7fd45a7de4207c2b3adb
+      internalID: 1709028607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_79
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd5eb77794c78843a23eca0fee22c10
+      internalID: -1697333304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_80
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97249a8f3a501844f94970be348de378
+      internalID: 1934128478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_81
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e594c0b78866fa4cba56e943f936773
+      internalID: -777475751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_82
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204d97f7334d090468a625af4d07f2ce
+      internalID: -377079389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_83
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2bef8cd3772ab489ae58a685b29d9f
+      internalID: 1043147887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_84
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba3a86cbe4baa14fa7f6a3699f63d48
+      internalID: -1691615818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_85
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf248c823fa2e7c41a27333a7bd7fc6b
+      internalID: 1044817646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_86
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d431aa970d27cc544a6f643f9bb6ecb9
+      internalID: -923968652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_87
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92df058f88cd18f4f9dfe971953d719a
+      internalID: 1318519927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_88
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8963d885ee800ec47a16710bcefc1a01
+      internalID: 431486665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_89
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de0a4a088674f34896e3cab1bfea639
+      internalID: 2088978846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_90
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21957f31ba0ee1408633581d2d01ead
+      internalID: 2040951651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_91
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dbe6391ea6e694c8f1b90d8ece46c9
+      internalID: -774990050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_92
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44588833106935147a90f59097beab06
+      internalID: -203515737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_93
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 135
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c046ff829d4c73246a73575116613263
+      internalID: -475546982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_94
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 60
+        width: 90
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ecd2e46e3534442a2db69f89bf9b3b
+      internalID: -1580402552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coisas Separadas_95
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 70
+        width: 84
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4111d1ad90daf5240bb93faf1e5499e7
+      internalID: -1801008476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f802db6a8a8931b4385e396b5e4a4d86
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Coisas Separadas_0: 1380822275
+      Coisas Separadas_1: 1649579263
+      Coisas Separadas_10: -167224107
+      Coisas Separadas_11: -1919411277
+      Coisas Separadas_12: 1876146703
+      Coisas Separadas_13: -1358216554
+      Coisas Separadas_14: 340120031
+      Coisas Separadas_15: 1318241961
+      Coisas Separadas_16: -1774405417
+      Coisas Separadas_17: 1682550140
+      Coisas Separadas_18: -92857870
+      Coisas Separadas_19: 1753043973
+      Coisas Separadas_2: 1441885984
+      Coisas Separadas_20: -2123241579
+      Coisas Separadas_21: -1450898572
+      Coisas Separadas_22: -466729682
+      Coisas Separadas_23: -246034101
+      Coisas Separadas_24: 1607382225
+      Coisas Separadas_25: 298754904
+      Coisas Separadas_26: -324709531
+      Coisas Separadas_27: 208313284
+      Coisas Separadas_28: 878312183
+      Coisas Separadas_29: -962867045
+      Coisas Separadas_3: 1654535968
+      Coisas Separadas_30: 1597112515
+      Coisas Separadas_31: 1963676190
+      Coisas Separadas_32: -248660488
+      Coisas Separadas_33: 2045260831
+      Coisas Separadas_34: -336811983
+      Coisas Separadas_35: 1019160950
+      Coisas Separadas_36: 84186264
+      Coisas Separadas_37: 1974752070
+      Coisas Separadas_38: -1514849566
+      Coisas Separadas_39: -1795089644
+      Coisas Separadas_4: -1185688329
+      Coisas Separadas_40: 39554171
+      Coisas Separadas_41: 511944128
+      Coisas Separadas_42: 461974106
+      Coisas Separadas_43: -345333163
+      Coisas Separadas_44: -2145999828
+      Coisas Separadas_45: 358431795
+      Coisas Separadas_46: 2074233013
+      Coisas Separadas_47: 1173925146
+      Coisas Separadas_48: 1030327334
+      Coisas Separadas_49: 653296974
+      Coisas Separadas_5: 1029180394
+      Coisas Separadas_50: -736377076
+      Coisas Separadas_51: 1115729166
+      Coisas Separadas_52: -1509491194
+      Coisas Separadas_53: -917574953
+      Coisas Separadas_54: -2014860800
+      Coisas Separadas_55: 1812892737
+      Coisas Separadas_56: -632191720
+      Coisas Separadas_57: 1956001797
+      Coisas Separadas_58: 1550561669
+      Coisas Separadas_59: -1772454366
+      Coisas Separadas_6: -289834965
+      Coisas Separadas_60: 505426016
+      Coisas Separadas_61: -1415396770
+      Coisas Separadas_62: -1859463401
+      Coisas Separadas_63: 2121408502
+      Coisas Separadas_64: -169219394
+      Coisas Separadas_65: -1154946877
+      Coisas Separadas_66: -1857283676
+      Coisas Separadas_67: -637567569
+      Coisas Separadas_68: 1609995199
+      Coisas Separadas_69: 1733812820
+      Coisas Separadas_7: -982053144
+      Coisas Separadas_70: -1155937842
+      Coisas Separadas_71: -428841458
+      Coisas Separadas_72: -618178238
+      Coisas Separadas_73: 965640976
+      Coisas Separadas_74: 1473730482
+      Coisas Separadas_75: 1467729696
+      Coisas Separadas_76: 896664592
+      Coisas Separadas_77: -1283515063
+      Coisas Separadas_78: 1709028607
+      Coisas Separadas_79: -1697333304
+      Coisas Separadas_8: -1792475977
+      Coisas Separadas_80: 1934128478
+      Coisas Separadas_81: -777475751
+      Coisas Separadas_82: -377079389
+      Coisas Separadas_83: 1043147887
+      Coisas Separadas_84: -1691615818
+      Coisas Separadas_85: 1044817646
+      Coisas Separadas_86: -923968652
+      Coisas Separadas_87: 1318519927
+      Coisas Separadas_88: 431486665
+      Coisas Separadas_89: 2088978846
+      Coisas Separadas_9: 2102859835
+      Coisas Separadas_90: 2040951651
+      Coisas Separadas_91: -774990050
+      Coisas Separadas_92: -203515737
+      Coisas Separadas_93: -475546982
+      Coisas Separadas_94: -1580402552
+      Coisas Separadas_95: -1801008476
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
