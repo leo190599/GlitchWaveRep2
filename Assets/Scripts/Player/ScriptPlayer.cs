@@ -37,6 +37,8 @@ public class ScriptPlayer : MonoBehaviour
     private AudioClip audioDano;
     [SerializeField]
     private AudioClip audioMorte;
+    //[SerializeField]
+    //private AudioClip somGlitch;
 
     [Header("Parametros Debug")]
     [SerializeField]
@@ -76,6 +78,8 @@ public class ScriptPlayer : MonoBehaviour
     private bool dashDadoNoAr=false;
     [SerializeField]
     private AudioSource emissorDeAudio;
+    [SerializeField]
+    private AudioSource emissorDeAudioGlitch;
     
 
     [Header("Scriptable objects")]
@@ -342,6 +346,7 @@ public class ScriptPlayer : MonoBehaviour
             informacoesPlayer.InvocarEventosAtivacaoGlitch();
             mensageiroPlayerShaderPersonagem.setEfeitoGlitch(true);
             corrotinaReceberDanoGlitch=ReceberDanoGlitch();
+            emissorDeAudioGlitch.Play();
             StartCoroutine(corrotinaReceberDanoGlitch);
         }
     }
@@ -350,6 +355,7 @@ public class ScriptPlayer : MonoBehaviour
         glitchAtivo=false;
         informacoesPlayer.InvocarEventosDesativacaoGlitch();
         mensageiroPlayerShaderPersonagem.setEfeitoGlitch(false);
+        emissorDeAudioGlitch.Stop();
         StopCoroutine(corrotinaReceberDanoGlitch);
     }
     public IEnumerator DesativarInvencibilidadeCorrotina()
@@ -368,6 +374,7 @@ public class ScriptPlayer : MonoBehaviour
                 informacoesPlayer.InvocarEventosDesativacaoGlitch();
                 glitchAtivo=false;
                 mensageiroPlayerShaderPersonagem.setEfeitoGlitch(false);
+                emissorDeAudioGlitch.Stop();
                 StopCoroutine(corrotinaReceberDanoGlitch);
             }
             yield return new WaitForSeconds(informacoesPlayer.GetIntervaloTempoRecebimentoDeDanoGlitch);

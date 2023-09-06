@@ -10,6 +10,8 @@ public class ScriptPistolaTripla : MonoBehaviour
     private GameObject localDeTiro;
     [SerializeField]
     private GameObject balaPrefab;
+    [SerializeField]
+    private AudioSource emissorDeAudioBala;
     
     public void Atirar()
     {
@@ -21,6 +23,7 @@ public class ScriptPistolaTripla : MonoBehaviour
         {
             Instantiate(balaPrefab, localDeTiro.transform.position, Quaternion.Euler(0, 0, 180));
         }
+        emissorDeAudioBala.Play();
     }
     public void DestruirPisTola()
     {
