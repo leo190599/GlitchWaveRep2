@@ -22,7 +22,7 @@ public class ControladorUIGlitch : MonoBehaviour
         AtualizarElementoVisualGlitch();
         informacoesPlayer.EventosCura += AtualizarElementoVisualGlitch;
         informacoesPlayer.EventosLevarDano += AtualizarElementoVisualGlitch;
-        labelCustoGlitch.text = informacoesPlayer.GetDanoGlitchPlayer.ToString();
+        labelCustoGlitch.text = (informacoesPlayer.GetDanoGlitchPlayer/informacoesPlayer.GetIntervaloTempoRecebimentoDeDanoGlitch).ToString()+"/seg";
     }
     private void OnDisable()
     {
