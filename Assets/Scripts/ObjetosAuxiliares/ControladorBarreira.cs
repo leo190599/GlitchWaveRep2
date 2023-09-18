@@ -19,6 +19,14 @@ public class ControladorBarreira : MonoBehaviour
 
     private void OnEnable()
     {
+        if(informacoesPlayer.GetGlitchAtivo)
+        {
+            DesativarColisor();
+        }
+        else
+        {
+            AtivarColisor();
+        }
         informacoesPlayer.EventosAtivacaoGlitch += DesativarColisor;
         informacoesPlayer.EventosDesativacaoGlitch += AtivarColisor;
     }

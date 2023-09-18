@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2416369707113228181}
   m_Layer: 0
   m_Name: BarreiraPrefab
-  m_TagString: Untagged
+  m_TagString: ColiderFantasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

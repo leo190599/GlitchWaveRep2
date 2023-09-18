@@ -16,7 +16,10 @@ public class InimigoBase : MonoBehaviour
 
     public virtual void LevarDano(float quantidadeDeDano)
     {
-        audioSourceSomHit.Play();
+        if (audioSourceSomHit.isActiveAndEnabled)
+        {
+            audioSourceSomHit.Play();
+        }
         vida-=quantidadeDeDano;
         if(vida<=0)
         {

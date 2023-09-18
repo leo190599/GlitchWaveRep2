@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: InformacoesPlayerPadrao
   m_EditorClassIdentifier: 
   vidaMaxima: 100
-  vidaAtual: 80
-  subItemObjetoScriptavel: {fileID: 11400000, guid: 00a56a856fa511a4eb471a370e83d10a, type: 2}
-  danoAtaqueBasico: 10
+  vidaAtual: 44
+  subItemObjetoScriptavel: {fileID: 0}
+  danoAtaqueBasico: 14
   danoGlitchPlayer: 1
   intervaloTempoRecebimentoDeDanoGlitch: 0.05

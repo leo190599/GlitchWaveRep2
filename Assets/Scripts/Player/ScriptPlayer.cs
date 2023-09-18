@@ -219,7 +219,7 @@ public class ScriptPlayer : MonoBehaviour
                 {
                     foreach(RaycastHit2D r in raycastsPulo)
                     {
-                        if(r.collider.tag!="Player")
+                        if(r.collider.tag!="Player" && r.collider.tag!="ColiderFantasma")
                         {
                             raycastsPulo.Clear();
                             return;

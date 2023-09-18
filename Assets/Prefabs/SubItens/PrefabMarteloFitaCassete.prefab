@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe819a4a700a9594eb3a3365ef9b1122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dano: 5
+  dano: 30
   raizPrefabMartelo: {fileID: 6911665270857887801}
 --- !u!61 &6911665271811799846
 BoxCollider2D:
