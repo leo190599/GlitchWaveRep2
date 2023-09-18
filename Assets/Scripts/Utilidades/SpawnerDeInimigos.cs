@@ -8,17 +8,27 @@ public class SpawnerDeInimigos : MonoBehaviour
     private GameObject objetoASerSpawnado;
     [SerializeField]
     private float intervaloDeSpawn;
-    // Start is called before the first frame update
-    void Start()
+    private IEnumerator corrotinaSpawn;
+    private void Start()
     {
-        StartCoroutine(SpawnarInimigo());
+        
+    }
+    // Start is called before the first frame update
+    void OnEnable()
+    {
+        corrotinaSpawn = SpawnarInimigo();
+        StartCoroutine(corrotinaSpawn);
+    }
+    private void OnDisable()
+    {
+        StopCoroutine(corrotinaSpawn);
     }
     IEnumerator SpawnarInimigo()
     {
         while (true)
         {
-            Instantiate(objetoASerSpawnado,transform.position,transform.rotation);
             yield return new WaitForSeconds(intervaloDeSpawn);
+            Instantiate(objetoASerSpawnado, transform.position, transform.rotation);
         }
     }
 }
