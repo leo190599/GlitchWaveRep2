@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempoDeVida: 1
   vel: 5
-  dano: 5
+  dano: 20
   rb: {fileID: 3644272851428657314}
 --- !u!50 &3644272851428657314
 Rigidbody2D:
