@@ -5123,10 +5123,10 @@ MonoBehaviour:
   triggerCausadorDeDano: {fileID: 1154219200252981143}
   particulasVida: {fileID: 6371835443228577787, guid: 1a975504df05ee846af02f3d47717a9b, type: 3}
   efeitosParticulasAtaque: {fileID: 807038707461443141}
-  vel: 0.25
+  vel: 0.35
   distanciaPlayerParaAtacar: 4
-  tempoPreparoAtaque: 1
-  tempoEmAtaque: 0.25
+  tempoPreparoAtaque: 0.2
+  tempoEmAtaque: 0.15
   velAtaque: 0.75
 --- !u!50 &1154219199930210035
 Rigidbody2D:
@@ -5161,7 +5161,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 326bcf2658c0b214f945b60c287c1c64, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
