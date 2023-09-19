@@ -14,13 +14,46 @@ public class ScriptCamera : MonoBehaviour
 
     private Vector3 offSet;
     private Vector3 novaTransformada;
+    [SerializeField]
+    private InformacoesPlayer informacoesPlayer;
+    [SerializeField]
+    private Animator animator;
     //Startis called before the first frame update
     void Start()
     {
         offSet=transform.position-player.transform.position;    
         novaTransformada=new Vector3();
+        AnimarCameraIdle();
+    }
+    private void OnEnable()
+    {
+        informacoesPlayer.EventosLevarDanoDeInimigo += AnimarCameraLevarDano;
+        informacoesPlayer.EventosDashFrente+= AnimarCameraDashFrente;
+        informacoesPlayer.EventosDashTras += AnimarCameraDashTras;
+    }
+    private void OnDisable()
+    {
+        informacoesPlayer.EventosLevarDanoDeInimigo -= AnimarCameraLevarDano;
+        informacoesPlayer.EventosDashFrente -= AnimarCameraDashFrente;
+        informacoesPlayer.EventosDashTras -= AnimarCameraDashTras;
     }
 
+    public void AnimarCameraDashFrente()
+    {
+        animator.SetInteger("AnimIndex", 1);
+    }
+    public void AnimarCameraDashTras()
+    {
+        animator.SetInteger("AnimIndex", 2);
+    }
+    public void AnimarCameraLevarDano()
+    {
+        animator.SetInteger("AnimIndex", 3);
+    }
+    public void AnimarCameraIdle()
+    {
+        animator.SetInteger("AnimIndex", 0);
+    }
     // Update is called once per frame
     void Update()
     {

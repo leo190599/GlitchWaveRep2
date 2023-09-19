@@ -26,10 +26,12 @@ public class EstadoDashPlayer : EstadoBasePlayer
         if(!player.GetDashDireita ^ player.GetOlhandoParaDireita)
         {
             player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.dashFrente);
+            player.GetInformacoesPlayer.InvocarEventosDashFrente();
         }
         else
         {
             player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.dashTras);
+            player.GetInformacoesPlayer.InvocarEventosDashTras();
         }
     }
     public override void AtualizarEstadoFixado()

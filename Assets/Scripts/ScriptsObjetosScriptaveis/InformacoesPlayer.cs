@@ -24,6 +24,10 @@ public class InformacoesPlayer : ScriptableObject
     public UnityAction EventosMorte;
     public UnityAction EventosTrocaSubItem;
 
+    public UnityAction EventosDashFrente;
+    public UnityAction EventosDashTras;
+    public UnityAction EventosLevarDanoDeInimigo;
+
     private bool glitchAtivo = false;
 
     public UnityAction EventosAtivacaoGlitch;
@@ -99,7 +103,27 @@ public class InformacoesPlayer : ScriptableObject
             EventosDesativacaoGlitch.Invoke();
         }
     }
-
+    public void InvocarEventosDashFrente()
+    {
+        if(EventosDashFrente!=null)
+        { 
+            EventosDashFrente.Invoke();
+        }
+    }
+    public void InvocarEventosDashTras()
+    {
+        if(EventosDashTras!=null)
+        { 
+            EventosDashTras.Invoke(); 
+        }
+    }
+    public void InvocarEventosLevarDanoInimigo()
+    {
+        if(EventosLevarDanoDeInimigo!=null)
+        {
+            EventosLevarDanoDeInimigo.Invoke();
+        }
+    }
     public float GetIntervaloTempoRecebimentoDeDanoGlitch => intervaloTempoRecebimentoDeDanoGlitch > 0 ? intervaloTempoRecebimentoDeDanoGlitch : 1;
     public float GetDanoAtaqueBasico=>danoAtaqueBasico;
     public float GetDanoGlitchPlayer=>danoGlitchPlayer;

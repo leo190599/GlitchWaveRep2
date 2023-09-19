@@ -9,6 +9,7 @@ public class EstadoTomouDanoPlayer : EstadoBasePlayer
     {
         base.IniciarEstadoPlayer(player);
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.levandoDano);
+        player.GetInformacoesPlayer.InvocarEventosLevarDanoInimigo();
         player.TocarAudio(player.GetAudioDano);
         if(player.GetOlhandoParaDireita)
         {
