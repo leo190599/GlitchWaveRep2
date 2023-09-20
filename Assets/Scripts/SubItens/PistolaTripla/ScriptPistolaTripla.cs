@@ -12,6 +12,10 @@ public class ScriptPistolaTripla : MonoBehaviour
     private GameObject balaPrefab;
     [SerializeField]
     private AudioSource emissorDeAudioBala;
+    [SerializeField]
+    private ParticleSystem emissorDeParticulas;
+    [SerializeField]
+    private int numeroDeParticulasPorBurst = 20;
     
     public void Atirar()
     {
@@ -23,6 +27,7 @@ public class ScriptPistolaTripla : MonoBehaviour
         {
             Instantiate(balaPrefab, localDeTiro.transform.position, Quaternion.Euler(0, 0, 180));
         }
+        emissorDeParticulas.Emit(numeroDeParticulasPorBurst);
         emissorDeAudioBala.Play();
     }
     public void DestruirPisTola()

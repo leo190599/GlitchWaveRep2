@@ -5115,7 +5115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 100
   vidaMaxima: 40
-  dano: 10
+  dano: 20
   audioSourceSomHit: {fileID: 628781505335202232}
   meshRobo: {fileID: 8261572397994477389}
   controladorMeshRobo: {fileID: 8785626769380236785}
@@ -5125,7 +5125,7 @@ MonoBehaviour:
   efeitosParticulasAtaque: {fileID: 807038707461443141}
   vel: 0.35
   distanciaPlayerParaAtacar: 4
-  tempoPreparoAtaque: 0.2
+  tempoPreparoAtaque: 0.3
   tempoEmAtaque: 0.15
   velAtaque: 0.75
 --- !u!50 &1154219199930210035
