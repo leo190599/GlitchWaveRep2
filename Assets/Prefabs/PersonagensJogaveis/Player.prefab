@@ -2282,8 +2282,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0071594003, y: -0.17851385}
-  m_Size: {x: 1.3729692, y: 4.8987336}
+  m_Offset: {x: -0.05619372, y: -0.17851385}
+  m_Size: {x: 0.7394248, y: 4.8987336}
   m_Direction: 0
 --- !u!1 &5224938833745055212
 GameObject:
@@ -2491,12 +2491,15 @@ MonoBehaviour:
   forcaPulo: 48
   olhandoParaDireita: 1
   perdaDeMovimentoNoAr: 0
-  vidaCuradaPorColisaoParticula: 3
+  vidaCuradaPorColisaoParticula: 1
   forcaAplicadaAoEntrarNoEstadoDeTomarDano: {x: -7, y: 20}
   tempoDeInvencibilidadeAoTomarDano: 1
   tempoDash: 0.15
   velDash: 100
   audioAtaqueBase: {fileID: 8300000, guid: a693126fa0b88764d9dad6c2e567dd80, type: 3}
+  audioDash: {fileID: 0}
+  audioDano: {fileID: 0}
+  audioMorte: {fileID: 0}
   glitchAtivo: 0
   anim: {fileID: 1380254792293307045}
   informacoesPlayer: {fileID: 11400000, guid: cd7b505426ff6784098cfa444cbaf08b, type: 2}
@@ -2513,6 +2516,7 @@ MonoBehaviour:
   colisorEspada: {fileID: 0}
   trailDash: {fileID: 5224938833307397660}
   emissorDeAudio: {fileID: 5224938833915711914}
+  emissorDeAudioGlitch: {fileID: 0}
   controldadorDeCenaPlayer: {fileID: 11400000, guid: 7357c71cf575b404ba93074952af3534, type: 2}
   mapeadorDeBotoes: {fileID: 11400000, guid: 87be08610859ca3459354c5e14b2c0da, type: 2}
   materialFisicoParado: {fileID: 6200000, guid: ebc85e14d2f8f7d4eb23dac0bf4d87e8, type: 2}
@@ -3433,8 +3437,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0071594003, y: -0.59520715}
-  m_Size: {x: 1.3729692, y: 4.065347}
+  m_Offset: {x: -0.016937774, y: -0.69561046}
+  m_Size: {x: 0.55367833, y: 3.8645396}
   m_Direction: 0
 --- !u!1 &5224938834450000275
 GameObject:

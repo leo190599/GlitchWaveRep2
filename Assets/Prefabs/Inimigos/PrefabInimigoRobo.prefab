@@ -5119,6 +5119,7 @@ MonoBehaviour:
   audioSourceSomHit: {fileID: 628781505335202232}
   meshRobo: {fileID: 8261572397994477389}
   controladorMeshRobo: {fileID: 8785626769380236785}
+  particulasDano: {fileID: 1135084400743101725, guid: fd386d3114393854ab2b0beab721a458, type: 3}
   playerAlvo: {fileID: 0}
   triggerCausadorDeDano: {fileID: 1154219200252981143}
   particulasVida: {fileID: 6371835443228577787, guid: 1a975504df05ee846af02f3d47717a9b, type: 3}

@@ -7,10 +7,10 @@ public class ScriptCamera : MonoBehaviour
     [SerializeField]
     private GameObject player;
 
-    [SerializeField]
-    private Vector3 velocidadeDeSeguimento;
-    [SerializeField]
-    private Vector3 maximaDistanciaDoLocalFinal;
+    //[SerializeField]
+    //private Vector3 velocidadeDeSeguimento;
+    //[SerializeField]
+    //private Vector3 maximaDistanciaDoLocalFinal;
 
     private Vector3 offSet;
     private Vector3 novaTransformada;

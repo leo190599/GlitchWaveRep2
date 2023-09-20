@@ -15,6 +15,8 @@ public class ScriptRobo : InimigoBase
     private GameObject meshRobo;
     [SerializeField]
     private ScriptMeshRobo controladorMeshRobo;
+    [SerializeField]
+    private GameObject particulasDano;
   
     [SerializeField]
     private GameObject playerAlvo=null;
@@ -152,6 +154,7 @@ public class ScriptRobo : InimigoBase
     {
         base.LevarDano(quantidadeDeDano);
         controladorMeshRobo.AtivarEfeitoDano();
+        Instantiate(particulasDano,transform.position,Quaternion.identity);
     }
     public override void Morrer()
     {
