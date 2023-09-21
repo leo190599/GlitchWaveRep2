@@ -10,6 +10,8 @@ public class ScriptElevador : MonoBehaviour
     private Animator animLuz;
     [SerializeField]
     private ControladorDeCena controladorDeCena;
+    [SerializeField]
+    private AudioSource emissorSino;
     
     void Start()
     {
@@ -20,11 +22,13 @@ public class ScriptElevador : MonoBehaviour
     {
         porta.SetActive(false);
         animLuz.SetBool("Aberto",true);
+        emissorSino.Play();
     }
     public void FecharPorta()
     {
         porta.SetActive(true);
         animLuz.SetBool("Aberto",false);
+        emissorSino.Play();
     }
 
     public void AcaoAbertura()

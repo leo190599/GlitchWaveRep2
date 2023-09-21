@@ -80,6 +80,8 @@ public class ScriptPlayer : MonoBehaviour
     private AudioSource emissorDeAudio;
     [SerializeField]
     private AudioSource emissorDeAudioGlitch;
+    [SerializeField]
+    private AudioSource emissorAudioTrocaItem;
     
 
     [Header("Scriptable objects")]
@@ -242,10 +244,12 @@ public class ScriptPlayer : MonoBehaviour
 
     void OnEnable()
     {
+        informacoesPlayer.EventosTrocaSubItem += TocarAudioTrocaSubItem;
         informacoesPlayer.EventosMorte+=Morrer;
     }
     void OnDisable()
     {
+        informacoesPlayer.EventosTrocaSubItem -= TocarAudioTrocaSubItem;
         informacoesPlayer.EventosMorte-=Morrer;
     }
 
@@ -425,6 +429,11 @@ public class ScriptPlayer : MonoBehaviour
             rotacaoAlvo.y=90;
             this.olhandoParaDireita=false;
         }
+    }
+
+    public void TocarAudioTrocaSubItem()
+    {
+        emissorAudioTrocaItem.Play();
     }
 
     public void AtivarEventoInicioAnimacao()
