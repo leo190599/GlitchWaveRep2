@@ -13,6 +13,11 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
         player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.usandoSubItem); 
     }
+    public override void EventoInicioAnimacao()
+    {
+        base.EventoInicioAnimacao();
+        player.IniciarCorrotinaEstadoPlayer(player.GetAnimator.GetCurrentAnimatorClipInfo(0).Length);
+    }
 
     public override void EventoAnimacao()
     {
@@ -36,6 +41,12 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
         {
             Debug.LogWarning("Nao ha sub item para instanciar");
         } 
+    }
+    public override void EventoCorrotinaEstado()
+    {
+        base.EventoCorrotinaEstado();
+        EventoFinalAnimacao();
+        Debug.Log("a");
     }
 
     public override void EventoFinalAnimacao()

@@ -412,6 +412,16 @@ public class ScriptPlayer : MonoBehaviour
         yield return new WaitForSeconds(tempo);
         TrocaEstadoPlayer(novoEstado);
     }
+    public void IniciarCorrotinaEstadoPlayer(float tempoParaExecucao)
+    {
+        if(corrotinaEstado!=null)
+        {
+            StopCoroutine(corrotinaEstado);
+        }
+        corrotinaEstado = CorrotinaEstadoPlayer(tempoParaExecucao);
+        StartCoroutine(corrotinaEstado);
+
+    }
     public IEnumerator CorrotinaEstadoPlayer(float tempo)
     {
         yield return new WaitForSeconds(tempo);
@@ -433,7 +443,10 @@ public class ScriptPlayer : MonoBehaviour
 
     public void TocarAudioTrocaSubItem()
     {
-        emissorAudioTrocaItem.Play();
+        if (informacoesPlayer.GetSubItemObjetoScriptavel != null)
+        {
+            emissorAudioTrocaItem.Play();
+        }
     }
 
     public void AtivarEventoInicioAnimacao()
