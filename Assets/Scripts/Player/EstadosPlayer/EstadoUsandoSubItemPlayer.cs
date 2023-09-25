@@ -5,6 +5,7 @@ using UnityEngine;
 public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
 {
     private GameObject subItem;
+    private bool usouSubItem = false;
     public override void IniciarEstadoPlayer(ScriptPlayer player)
     {
         base.IniciarEstadoPlayer(player);
@@ -17,30 +18,34 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
     {
         base.EventoInicioAnimacao();
         player.IniciarCorrotinaEstadoPlayer(player.GetAnimator.GetCurrentAnimatorClipInfo(0).Length);
-    }
+        //}
 
-    public override void EventoAnimacao()
-    {
-        base.EventoAnimacao();
-        subItem=player.GetInformacoesPlayer.GetPrefabSubItem();
-        if(subItem!=null)
+        //public override void EventoAnimacao()
+        //{
+        //  base.EventoAnimacao();
+        if (!usouSubItem)
         {
-            if((player.GetInformacoesPlayer.GetVidaAtual-player.GetInformacoesPlayer.GetSubItemObjetoScriptavel.GetCustoDeVida)>0)
+            subItem = player.GetInformacoesPlayer.GetPrefabSubItem();
+            if (subItem != null)
             {
-                player.GetInformacoesPlayer.ReceberDano(player.GetInformacoesPlayer.GetSubItemObjetoScriptavel.GetCustoDeVida);
+                if ((player.GetInformacoesPlayer.GetVidaAtual - player.GetInformacoesPlayer.GetSubItemObjetoScriptavel.GetCustoDeVida) > 0)
+                {
+                    player.GetInformacoesPlayer.ReceberDano(player.GetInformacoesPlayer.GetSubItemObjetoScriptavel.GetCustoDeVida);
 
-                player.instanciarObjeto(subItem,player.GetTransformPosicaoInstanciaSubItem.position,
-                Quaternion.Euler(0,0,0), new Vector3(player.GetOlhandoParaDireita?1:-1,1,1));
+                    player.instanciarObjeto(subItem, player.GetTransformPosicaoInstanciaSubItem.position,
+                    Quaternion.Euler(0, 0, 0), new Vector3(player.GetOlhandoParaDireita ? 1 : -1, 1, 1));
+                }
+                else
+                {
+                    Debug.Log("Nao ha vida suficiente");
+                }
             }
             else
             {
-                Debug.Log("Nao ha vida suficiente");
+                Debug.LogWarning("Nao ha sub item para instanciar");
             }
+            usouSubItem = true;
         }
-        else
-        {
-            Debug.LogWarning("Nao ha sub item para instanciar");
-        } 
     }
     public override void EventoCorrotinaEstado()
     {

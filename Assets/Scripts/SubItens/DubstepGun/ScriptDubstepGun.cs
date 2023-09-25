@@ -14,6 +14,10 @@ public class ScriptDubstepGun : MonoBehaviour
     void Start()
     {
         meshRaio.material.SetFloat("_Direcao",-Mathf.Sign(transform.localScale.x));
+        if(ScriptCamera.GetCameraSingleton!=null)
+        {
+            ScriptCamera.GetCameraSingleton.AnimarCameraGrandeImpacto();
+        }
         Destroy(gameObject,tempoDeVida);
     }
 

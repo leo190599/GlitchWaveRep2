@@ -6,7 +6,8 @@ public class ScriptCamera : MonoBehaviour
 {
     [SerializeField]
     private GameObject player;
-
+    [SerializeField]
+    private static ScriptCamera cameraSingleton;
     //[SerializeField]
     //private Vector3 velocidadeDeSeguimento;
     //[SerializeField]
@@ -26,13 +27,24 @@ public class ScriptCamera : MonoBehaviour
         AnimarCameraIdle();
     }
     private void OnEnable()
-    {
+    {   if(cameraSingleton==null)
+        {
+            cameraSingleton = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         informacoesPlayer.EventosLevarDanoDeInimigo += AnimarCameraLevarDano;
         informacoesPlayer.EventosDashFrente+= AnimarCameraDashFrente;
         informacoesPlayer.EventosDashTras += AnimarCameraDashTras;
     }
     private void OnDisable()
     {
+        if (cameraSingleton == this)
+        {
+            cameraSingleton = null;
+        }
         informacoesPlayer.EventosLevarDanoDeInimigo -= AnimarCameraLevarDano;
         informacoesPlayer.EventosDashFrente -= AnimarCameraDashFrente;
         informacoesPlayer.EventosDashTras -= AnimarCameraDashTras;
@@ -53,6 +65,10 @@ public class ScriptCamera : MonoBehaviour
     public void AnimarCameraIdle()
     {
         animator.SetInteger("AnimIndex", 0);
+    }
+    public void AnimarCameraGrandeImpacto()
+    {
+        animator.SetInteger("AnimIndex", 4);
     }
     // Update is called once per frame
     void Update()
@@ -80,4 +96,5 @@ public class ScriptCamera : MonoBehaviour
         
 
     }
+    public static ScriptCamera GetCameraSingleton=>cameraSingleton;
 }

@@ -28,7 +28,10 @@ public class SessaoNivel : MonoBehaviour
             {
                 foreach (GameObject g in objetosASairemDaSubCenaAoIniciar)
                 {
-                    g.transform.parent = null;
+                    if (g != null)
+                    {
+                        g.transform.parent = null;
+                    }
                 }
                 ativadoPrimeiraVez = true;
             }
