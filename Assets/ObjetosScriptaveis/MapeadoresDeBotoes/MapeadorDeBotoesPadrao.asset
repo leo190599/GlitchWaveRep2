@@ -15,7 +15,9 @@ MonoBehaviour:
   eixoDeMovimentoHorizontal: Horizontal
   botaoPulo: 32
   botaoPause: 9
-  botaoAtaque: 108
-  botaoSubItem: 107
+  botaoAtaque: 107
+  botaoSubItem: 119
   botaoAbaixar: 115
-  botaoGlitch: 111
+  botaoGlitch: 105
+  botaoDashDireita: 108
+  botaoDashEsquerda: 106
