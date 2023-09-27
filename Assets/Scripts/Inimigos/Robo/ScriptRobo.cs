@@ -10,6 +10,8 @@ public class ScriptRobo : InimigoBase
     private float direcaoMovimento;
     private Rigidbody2D rb;
     private estado estadoAtual=estado.idle;
+    [SerializeField]
+    private AudioSource emissorAudioDrift;
 
     [SerializeField]
     private GameObject meshRobo;
@@ -183,6 +185,7 @@ public class ScriptRobo : InimigoBase
         estadoAtual = estado.prepararAtaque;
         controladorMeshRobo.TrocarAnim(ScriptMeshRobo.EstadosAnimacao.preparandoAtaque);
         corrotinaPreparoAtaque = CorrotinaPreparoAtaque(tempoPreparoAtaque);
+        emissorAudioDrift.Play();
         StartCoroutine(corrotinaPreparoAtaque);
         triggerCausadorDeDano.SetActive(false);
         efeitosParticulasAtaque.SetActive(true);
@@ -200,6 +203,7 @@ public class ScriptRobo : InimigoBase
         corrotinaAtaque = CorrotinaAtaque(tempoEmAtaque);
         triggerCausadorDeDano.SetActive(true);
         efeitosParticulasAtaque.SetActive(false);
+        emissorAudioDrift.Stop();
         StartCoroutine(corrotinaAtaque);
     }
     IEnumerator CorrotinaAtaque(float tempoNoEstadoAtaque)

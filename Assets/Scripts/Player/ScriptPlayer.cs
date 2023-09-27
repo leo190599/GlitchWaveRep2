@@ -82,6 +82,8 @@ public class ScriptPlayer : MonoBehaviour
     private AudioSource emissorDeAudioGlitch;
     [SerializeField]
     private AudioSource emissorAudioTrocaItem;
+    [SerializeField]
+    private AudioSource emissorAudioCura;
     
 
     [Header("Scriptable objects")]
@@ -386,7 +388,12 @@ public class ScriptPlayer : MonoBehaviour
     }
     public void Curar(float quantidadeDeCura)
     {
+        float vidaAntesDaCura = informacoesPlayer.GetVidaAtual;
         informacoesPlayer.Curar(quantidadeDeCura);
+        if (informacoesPlayer.GetVidaAtual > vidaAntesDaCura)
+        {
+            emissorAudioCura.Play();
+        }
     }
 
     public void Morrer()
