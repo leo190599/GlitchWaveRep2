@@ -12,12 +12,13 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
         player.GetRigidbody2D.velocity=(new Vector2(0,0));
         player.GetRigidbody2D.sharedMaterial=player.GetMaterialFisicoParado;
         player.GetRigidbody2D.constraints=RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-        player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.usandoSubItem); 
+        player.TrocarAnimPlayer(ScriptPlayer.EstadosAnimacao.usandoSubItem);
+        player.IniciarCorrotinaEstadoPlayer(.45f);
     }
     public override void EventoInicioAnimacao()
     {
         base.EventoInicioAnimacao();
-        player.IniciarCorrotinaEstadoPlayer(player.GetAnimator.GetCurrentAnimatorClipInfo(0).Length);
+        //player.IniciarCorrotinaEstadoPlayer(player.GetAnimator.GetCurrentAnimatorClipInfo(0).Length);
         //}
 
         //public override void EventoAnimacao()
@@ -25,6 +26,7 @@ public class EstadoUsandoSubItemPlayer : EstadoAtivoBasePlayer
         //  base.EventoAnimacao();
         if (!usouSubItem)
         {
+            //Debug.Log(player.GetAnimator.GetCurrentAnimatorClipInfo(0).Length);
             subItem = player.GetInformacoesPlayer.GetPrefabSubItem();
             if (subItem != null)
             {

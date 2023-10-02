@@ -5,7 +5,7 @@ using UnityEngine;
 public class EstadoAbaixadaAtaquePlayer : EstadoAtivoBasePlayer
 {
     private float tempoDecorridoNoEstado=0;
-    private float tempoMaximoNoEstado;
+    private float tempoMaximoNoEstado=.395f;
     public override void IniciarEstadoPlayer(ScriptPlayer player)
     {
         base.IniciarEstadoPlayer(player);
@@ -26,7 +26,8 @@ public class EstadoAbaixadaAtaquePlayer : EstadoAtivoBasePlayer
     public override void EventoInicioAnimacao()
     {
         base.EventoInicioAnimacao();
-        tempoMaximoNoEstado=player.GetAnimator.GetCurrentAnimatorStateInfo(1).length;
+       //tempoMaximoNoEstado=player.GetAnimator.GetCurrentAnimatorStateInfo(1).length;
+        //Debug.Log(tempoMaximoNoEstado);
     }
     public override void EventoAnimacao()
     {

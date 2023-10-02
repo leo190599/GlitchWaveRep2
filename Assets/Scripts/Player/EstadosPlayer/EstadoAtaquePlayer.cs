@@ -5,7 +5,7 @@ using UnityEngine;
 public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
 {
     private float tempoDecorridoNoEstado=0;
-    private float tempoMaximoNoEstado;
+    private float tempoMaximoNoEstado=.395f;
     //private bool executouEventoFinalAnimacao=false;
     // Start is called before the first frame update
     public override void IniciarEstadoPlayer(ScriptPlayer player)
@@ -31,7 +31,8 @@ public class EstadoAtaquePlayer : EstadoAtivoBasePlayer
     {
         base.EventoInicioAnimacao();
         
-        tempoMaximoNoEstado=player.GetAnimator.GetCurrentAnimatorStateInfo(1).length;
+       // tempoMaximoNoEstado=player.GetAnimator.GetCurrentAnimatorStateInfo(1).length;
+        //Debug.Log(tempoMaximoNoEstado);
     }
 
     public override void EventoAnimacao()
